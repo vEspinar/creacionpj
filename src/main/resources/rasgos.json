@@ -1,0 +1,782 @@
+[
+    {
+        "Nombre": "Aasimar",
+        "Descripción": "Criaturas con este Rasgo son Vástagos Planares descendientes de seres Celestiales. Una habilidad con este Rasgo solo puede seleccionarse o usarse por un Aasimar."
+    },
+    {
+        "Nombre": "Aberración",
+        "Descripción": "Criaturas con este Rasgo son corrupciones del orden natural o provienen de más allá de los planos."
+    },
+    {
+        "Nombre": "Abjuración",
+        "Descripción": "Relacionado con la escuela de magia que estudia la protección."
+    },
+    {
+        "Nombre": "Aceite",
+        "Descripción": "Sustancia viscosa que se aplica normalmente a un objeto y se gasta."
+    },
+    {
+        "Nombre": "Ácido",
+        "Descripción": "Una habilidad con este Rasgo produce daño de ácido. Una criatura con este rasgo tiene una conexión mágica con ácido."
+    },
+    {
+        "Nombre": "Aditivo",
+        "Descripción": "Una dote con este rasgo te permite añadir sustancias especiales a los consumibles alquímicos que creas con Alquímia Rápida (no puedes usar aditivos a los viales rápidos). Solo se puede añadir un aditivo a un objeto alquímico y solo una vez por ronda. Muchas habilidades aditivas especifican a que consumibles puedes añadirlos."
+    },
+    {
+        "Nombre": "Adivinación",
+        "Descripción": "Relacionado con la escuela de magia que estudia la transferencia de información y las predicciones."
+    },
+    {
+        "Nombre": "Ágil",
+        "Descripción": "El Penalizador por Ataque múltiple en tu segundo y tercer ataque en esta ronda es -4 y -8 en lugar de -5 y -10 respectivamente."
+    },
+    {
+        "Nombre": "Agua",
+        "Descripción": "Efectos con este rasgo manipulan o crean agua. Si no hay agua, los efectos de manipulación no tienen efecto. Las criaturas con este rasgo están principalmente compuestas por agua o tienen una relación mágica con el agua. Planos con este rasgo son mayormente líquidos. Una criatura que no pueda respirar en el agua o dar con una bolsa de aire es probable que se ahogue. Se aplican las reglas de combate acuático, incluyendo la inhabilidad de lanzar hechizos o usar acciones con el rasgo fuego. Criaturas débiles al agua reciben daño igual al doble de su debilidad al final de cada ronda."
+    },
+    {
+        "Nombre": "Aire",
+        "Descripción": "Efectos con este rasgo manipulan o crean aire. Si no hay aire, los efectos de manipulación no tienen efecto. Las criaturas con este rasgo están principalmente compuestas por aire o tienen una relación mágica con el aire. Planos con este rasgo suelen ser espacios abiertos con vientos de diversas intensidades, aunque también disponen de islas raras o piedras flotantes y otros elementos y energías. Suelen tener atmosferas respirables pero también pueden tener nubes de ácido o gas tóxico. Las criaturas de tierra suelen tener problemas para encontrar terreno solido en el que posicionarse, poniéndolas en desventaja."
+    },
+    {
+        "Nombre": "Alquímico",
+        "Descripción": "Objetos alimentados por catalizadores alquímicos. A menos que se indique lo contrario, no son mágicos ni irradian aura mágica. Criaturas alquímicas son alimentadas parcialmente por reacciones alquímicas."
+    },
+    {
+        "Nombre": "Alquimista",
+        "Descripción": "Relacionado con la clase Alquimista."
+    },
+    {
+        "Nombre": "Ambiental",
+        "Descripción": "Perteneciente al mundo natural. Normalmente trampas como arenas movedizas o similar."
+    },
+    {
+        "Nombre": "Ángel",
+        "Descripción": "Familia celestial nativa del plano Nirvana."
+    },
+    {
+        "Nombre": "Animal",
+        "Descripción": "Criatura con baja inteligencia (por debajo de -4 normalmente), no puede hablar y no puede ser entrenada en habilidades de inteligencia."
+    },
+    {
+        "Nombre": "Aparición",
+        "Descripción": "Un peligro con este rasgo es un eco espiritual. Acabar con una Aparición normalmente requiere resolver aquello que la retiene en ese plano. Una Aparición con la que no se acaba, siempre vuelve tras un tiempo."
+    },
+    {
+        "Nombre": "Personificación",
+        "Descripción": "Entidades espirituales a las que les falta el poder para entrar o afectar el mundo físico. A diferencia de los fantasmas o espíritus, una personificación no necesita haber sido una criatura viva y puede ser un lugar o un evento. Las personificaciones necesitan a un animista para interactuar con otras personas o cosas y no pueden ser afectadas por hechizos o habilidades mas allá de aquellos que tiene el animista. Las dotes de animista que afectan a espíritus, afectan a las personificaciones si lo indican explícitamente. Habilidades del animista con el rasgo Personificación, necesitan que una o mas de tus Personificaciones actúen contigo. Debes investir al menos una personificación para poder usar habilidades de personificación. Normalmente, se asume que te envistes tus personificaciones durante tus preparativos diarios, pero a veces, tus personificaciones pueden dispersarse o separarse de ti temporalmente; no estas investida con personificaciones dispersadas."
+    },
+    {
+        "Nombre": "Apertura",
+        "Descripción": "Solo puede usarse si este turno aún no has usado ninguna acción con los rasgos ataque o apertura."
+    },
+    {
+        "Nombre": "Arcano",
+        "Descripción": "Magia de tradición arcana, basada en a lógica y lo racional. Todo lo que tenga este rasgo es mágico. Una criatura con este rasgo está formada por magia o tiene una fuerte conexión con magia arcana."
+    },
+    {
+        "Nombre": "Arconte",
+        "Descripción": "Familia celestial que protege el Cielo."
+    },
+    {
+        "Nombre": "Arquetipo",
+        "Descripción": "Dotes que pertenecen a un Arquetipo."
+    },
+    {
+        "Nombre": "Arrojadiza",
+        "Descripción": "Este arma se puede lanzar con un ataque a rango; al lanzarse pasa a ser arma a rango. Añades tu modificador de fuerza al daño como harías con una arma cuerpo a cuerpo. En armas cuerpo a cuerpo, siempre incluye un incremento de rango que representa el rango."
+    },
+    {
+        "Nombre": "Astral",
+        "Descripción": "Criaturas con este rasgo pertenecen al plano Astral. Pueden sobrevivir en el Plano Astral."
+    },
+    {
+        "Nombre": "Ataque",
+        "Descripción": "Una habilidad con este Rasgo incluye un ataque. Por cada ataque después del primero en un mismo turno, se aplica el penalizador de ataque múltiple."
+    },
+    {
+        "Nombre": "Auditivo",
+        "Descripción": "Acciones y efectos con este rasgo dependen del sonido. Una acción con este rasgo requiere que la criatura pueda hablar o realizar el sonido requerido. Un hechizo con el rasgo Auditivo solo afecta si el objetivo puede oírlo. Esto afecta solo a los efectos basados en sonido, determinado por el DJ. Es diferente de los efectos sónicos, que afectan a criaturas que no pueden oír (como criaturas sordas) mientras el efecto haga sonido."
+    },
+    {
+        "Nombre": "Azata",
+        "Descripción": "Familia Celestial del Elisio."
+    },
+    {
+        "Nombre": "Baluarte",
+        "Descripción": "Este arma cubre por completo y te proporciona beneficios contra algunos efectos de daño. En tiradas de salvación de reflejos para evitar efectos de daño, como una bola de fuego, añades un modificador de +3 en lugar de tu modificador de destreza."
+    },
+    {
+        "Nombre": "Bárbaro",
+        "Descripción": "Relacionado con la clase Bárbaro."
+    },
+    {
+        "Nombre": "Bardo",
+        "Descripción": "Relacionado con la clase Bardo."
+    },
+    {
+        "Nombre": "Barrido",
+        "Descripción": "Este arma realiza ataques de barrido. Cuando ataques con este arma obtienes un bonificador +1 por circunstancia a tu tirada de ataque si ya has atacado a una criatura diferente este turno con esta misma arma."
+    },
+    {
+        "Nombre": "Bastón",
+        "Descripción": "Objeto mágico que contiene hechizos temáticos y permite al lanzador de conjuros lanzar hechizos adicionales preparando el bastón."
+    },
+    {
+        "Nombre": "Bestia",
+        "Descripción": "Una criatura parecida a un animal pero con un modificador de inteligencia -3 o superior es una Bestia. A diferencia de un animal, una bestia puede hablar y razonar."
+    },
+    {
+        "Nombre": "Bomba",
+        "Descripción": "Una bomba alquímica combina componentes alquímicos volátiles que explotan cuando impacta con una criatura u objeto. Muchas bombas alquímicas hacen daño, aunque pueden tener otros efectos."
+    },
+    {
+        "Nombre": "Bueno",
+        "Descripción": "Efectos con este rasgo manipulan energía de planos externos alineados con el bien y son opuestos a los siervos divinos del mal o de deidades malignas. Una criatura con este rasgo es de alineamiento Bueno."
+    },
+    {
+        "Nombre": "Campeón",
+        "Descripción": "Relacionado con la clase Campeón."
+    },
+    {
+        "Nombre": "Caótico",
+        "Descripción": "Efectos con este rasgo manipulan energía de planos externos alineados con el caos y son anatema para siervos divinos legales o de deidades legales. Una criatura con este rasgo es de alineamiento caótico."
+    },
+    {
+        "Nombre": "Celestial",
+        "Descripción": "Criaturas que provienen o tienen un vínculo fuerte con los planos sagrados. Pueden sobrevivir en los planos situados en la esfera exterior."
+    },
+    {
+        "Nombre": "Cieno",
+        "Descripción": "Criaturas con anatomía simple. Suelen tener modificadores de atributos mentales bajos e inmunidad a efectos mentales y daño de precisión."
+    },
+    {
+        "Nombre": "Clérigo",
+        "Descripción": "Relacionado con la clase Clérigo."
+    },
+    {
+        "Nombre": "Compañero",
+        "Descripción": "Un objeto con este rasgo puede ser llevado por compañeros animales o criaturas similares. Un compañero puede llevar hasta dos objetos investidos."
+    },
+    {
+        "Nombre": "Complejo",
+        "Descripción": "Un peligro con este rasgo tiene turnos durante un encuentro."
+    },
+    {
+        "Nombre": "Composición",
+        "Descripción": "Para lanzar un truco o conjuro de Foco se utiliza Interpretación. Si el Hechizo requiere un componente auditivo, se puede recitar un poema, un monólogo o cantar. Si requiere un componente visual, se puede bailar o hacer mímica. Sólo se puede lanzar un hechizo de composición cada turno y tener uno activo a la vez. Si lanzas uno nuevo, los efectos del anterior terminan inmediatamente."
+    },
+    {
+        "Nombre": "Común",
+        "Descripción": "Cualquier cosa que no tenga los rasgos 'poco común', 'raro' o 'único', tiene el rasgo Común por defecto. Este rasgo indica que está disponible a todos los jugadores que cumplan los prerrequisitos. Una criatura con este rasgo es conocida y puede ser invocada con el hechizo que corresponda."
+    },
+    {
+        "Nombre": "Concentrar",
+        "Descripción": "Una acción con este rasgo requiere cierto grado de concentración mental y disciplina."
+    },
+    {
+        "Nombre": "Conjuración",
+        "Descripción": "Relacionado con la escuela de magia que estudia la invocación, creación y teletransportación."
+    },
+    {
+        "Nombre": "Consagración",
+        "Descripción": "Un hechizo con este rasgo potencia un area durante un periodo de tiempo. Un área solo puede tener un efecto de consagración cada vez. Un nuevo efecto intenta contrarrestar el existente en las areas en que se pisen."
+    },
+    {
+        "Nombre": "Constructo",
+        "Descripción": "Una criatura artificial potenciada por una fuerza que no es vitalidad ni vacío. Suelen ser descerebrados, inmunes a sangrado, efectos de muerte, enfermedad, curación, ataques no letales, veneno, vitalidad, vacío y las condiciones de condena, drenado, fatigado, paralizado, indispuesto y inconsciente; pueden tener una dureza basada en el material utilizado en sus cuerpos. No son criaturas vivas, pero no son muertos vivientes. Cuando se les reduce a 0 puntos de golpe, se destruyen."
+    },
+    {
+        "Nombre": "Consumible",
+        "Descripción": "Un objeto con este rasgo solo puede utilizarse una vez, se destruye tras la activación. Objetos consumibles incluyen objetos alquímicos y mágicos como pergaminos y talismanes. Un personaje puede fabricar consumibles en lotes de cuatro."
+    },
+    {
+        "Nombre": "Contacto",
+        "Descripción": "Un veneno de contacto se activa al aplicarlo a un objeto o a la piel directa de una criatura viva. La primera criatura que toque el objeto afectado debe realizar una tirada de salvación inmediatamente cuando el veneno toca su piel. Venenos de contacto no pueden aplicarse a criaturas mediante armas debido a la dificultad de aplicarlo sin envenenar a quien empuña el arma. Normalmente el tiempo de duración de un veneno de contacto es 1 minuto."
+    },
+    {
+        "Nombre": "Convocado",
+        "Descripción": "Una criatura invocada por un hechizo o efecto obtiene este rasgo. Una criatura convocada no puede convocar otras criaturas, crear objetos de valor o lanzar hechizos que requieran un coste. Tiene el rasgo esbirro. Si intenta lanzar un hechizo igual o superior al rango del hechizo que lo ha invocado, sobrepasa la magia de invocación, haciendo que falle y termine la invocación. Por todo lo demás, la criatura invocada utiliza habilidades normales de una criatura de su tipo. Normalmente ataca a sus enemigos lo mejor que puede. Si te puedes comunicar con la criatura, puedes intentar darle ordenes, pero el DJ determina el grado en el que te obedece. Inmediatamente tras lanzar el hechizo, la criatura utiliza sus dos acciones de ese turno. Un engendro u otra criatura generada de una criatura convocada, vuelve a su forma original (normalmente un cadaver en el caso del engendro) una vez la criatura convocada se ha ido. Si no queda claro cual sería ese estado, el DJ decide. Criaturas convocadas pueden ser desterradas por varios hechizos y efectos. Se destierran automáticamente al llegar a 0 punto de golpe o si el hechizo que las ha convocado termina."
+    },
+    {
+        "Nombre": "Curación",
+        "Descripción": "Un efecto de curación restablece el cuerpo de la criatura, normalmente a restableciendo punto de golpe, pero a veces eliminando enfermedades o efectos nocivos."
+    },
+    {
+        "Nombre": "Cúspide",
+        "Descripción": "Cuando invistes un objeto con este rasgo, mejora una de tus características, ya sea incrementando el modificador en 1 o a un total de +4, lo que daría el mayor resultado. Esto te da los beneficios del nuevo modificador de característica hasta que la investidura acabe: subir la inteligencia te permite entrenar en mas habilidades y aprender nuevos idiomas, subir la constitución te da más puntos de golpe, etc. Sólo puedes obtener los beneficios de un objeto con este rasgo la primera vez que lo invistes en un periodo de 24 horas, y sólo puedes beneficiarte de un objeto Cúspide cada vez. Si intentas investir un objeto cúspide cuando ya tienes otro investido, no obtienes el incremento de característica, pero si los demás efectos."
+    },
+    {
+        "Nombre": "de Justa",
+        "Descripción": "Un arma diseñada para el combate montado mediante un arnés o similar. Mientras se está montado, si se realiza un movimiento de al menos 10 pies en la acción anterior al ataque, añade un bonificador de circunstancia al daño igual al numero de dados del arma. Como parte de tu acción de montar a una criatura, puedes cambiar el agarre de un arma de Justa a una mano. Tras esto, cambiar el agarre requiere el mismo numero de acciones que se describe en el manual del jugador. Si se desmonta mientras se empuña un arma de justa en una sola mano, se puede cambiar a dos manos como parte de esa acción si se tiene una mano libre. Si no, se puede aguantar el arma con una mano pero no empuñarla."
+    },
+    {
+        "Nombre": "Dedicación",
+        "Descripción": "Cada dote de Dedicación de un arquetipo representa el esfuerzo de un personaje por aprender nuevas habilidades, haciendo imposible centrarse en otro arquetipo a la vez. Cuando elijes una dote de Dedicación, no puedes coger otra dote de dedicación hasta que no hayas cogido dos dotes más de tu arquetipo actual. No puedes reentrenar una dote de Dedicación mientras tengas otras dotes de ese arquetipo."
+    },
+    {
+        "Nombre": "Demonio",
+        "Descripción": "Familia impía de las grietas exteriores."
+    },
+    {
+        "Nombre": "Derribo",
+        "Descripción": "Se puede utilizar un arma con este rasgo y la habilidad de atletismo para derribar aunque no se tenga una mano libre. Esto utiliza el rango del arma, si es diferente del de la criatura que la empuña, y añade los bonificadores por objeto a las tiradas de ataque del arma como bono a la tirada de atletismo. Si se falla críticamente la tirada de derribo con el arma, se puede soltar el arma para aceptar los efectos de un fallo en lugar de un fallo crítico."
+    },
+    {
+        "Nombre": "Desarme",
+        "Descripción": "Se puede utilizar un arma con este rasgo y la habilidad de Atletismo para desarmar aunque no se tenga una mano libre. Esto utiliza el alcance del arma, si es diferente del de la criatura que la empuña, y añade los bonificadores por objeto a las tiradas de ataque del arma como bono a la tirada de atletismo. Si se falla críticamente la tirada de desarme con el arma, se puede soltar el arma para aceptar los efectos de un fallo en lugar de un fallo crítico. En un éxito crítico, se requiere una mano libre para recibir el arma sustraída."
+    },
+    {
+        "Nombre": "Descerebrado",
+        "Descripción": "Una criatura con este rasgo tiene unos atributos mentales programados o rudimentarios. La mayoría, si no todas, tienen sus atributos mentales en -5 y son inmunes a efectos mentales."
+    },
+    {
+        "Nombre": "Desventura",
+        "Descripción": "Un efecto con este rasgo altera perjudicialmente como se tiran los dados. Una tirada no puede sufrir mas de un efecto de Desventura. Si múltiples efectos de desventura se aplicarían, el DJ decide cual es peor y lo aplica. Si un efecto de Fortuna y un efecto de Desventura se aplican a la misma tirada, se cancelan mutuamente y se tira normal."
+    },
+    {
+        "Nombre": "Detección",
+        "Descripción": "Efectos con este rasgo tratan de determinar la presencia o ubicación de una persona, objeto o aura."
+    },
+    {
+        "Nombre": "Diablo",
+        "Descripción": "Familia Impía procedente del infierno."
+    },
+    {
+        "Nombre": "Dinosaurio",
+        "Descripción": "Reptiles que han sobrevivido desde tiempos prehistóricos."
+    },
+    {
+        "Nombre": "Divino",
+        "Descripción": "Magia de tradición divina, procedente de deidades o fuentes similares. Cualquier cosa con este rasgo es mágica. Una criatura con este rasgo se constituye principalmente de magia divina o tiene un fuerte vinculo con ella."
+    },
+    {
+        "Nombre": "Dragón",
+        "Descripción": "Criaturas reptilianas, normalmente aladas o con el poder de volar. Muchos puede exhalar energía mágica y son inmunes a sueño y parálisis."
+    },
+    {
+        "Nombre": "Drow",
+        "Descripción": "Tipo de elfo subterráneo, normalmente con visión en la oscuridad y habilidades mágicas innatas."
+    },
+    {
+        "Nombre": "Druida",
+        "Descripción": "Relacionado con la clase Druida."
+    },
+    {
+        "Nombre": "Duergar",
+        "Descripción": ""
+    },
+    {
+        "Nombre": "Electricidad",
+        "Descripción": "Efectos con este rasgo provocan daño eléctrico. Una criatura con este rasgo tiene una conexión con electricidad mágica."
+    },
+    {
+        "Nombre": "Elemental",
+        "Descripción": "Criaturas ligadas directamente a un elemento y nativas de los planos elementales. No necesitan respirar."
+    },
+    {
+        "Nombre": "Elfo",
+        "Descripción": "Relativo a la Herencia Elfo. Son gente misteriosa con una rica tradición mágica y académica que suelen tener visión en la penumbra. Una habilidad con este rasgo puede ser usada o seleccionada solo por elfos. Un arma con este rasgo es creada y usada por elfos."
+    },
+    {
+        "Nombre": "Elixir",
+        "Descripción": "Líquidos alquímicos que se usan bebidos."
+    },
+    {
+        "Nombre": "Emoción",
+        "Descripción": "Este efecto altera las emociones de una criatura. Efectos con este rasgo siempre tienen el rasgo mental también. Criaturas con entrenamiento especial o que tienen inteligencia mecánica o artificial son inmunes a estos efectos."
+    },
+    {
+        "Nombre": "Empujar",
+        "Descripción": "Se puede utilizar un arma con el Rasgo Empujar y la habilidad de atletismo para empujar incluso si no se tiene una mano libre. Esto utiliza el alcance del arma, si es diferente del de la criatura que la empuña, y añade el bonificador por objeto a las tiradas de ataque del arma como bonificador por objeto a la tirada de atletismo. En un fallo crítico al empujar con el arma, se puede soltar el arma para aceptar los efectos de un fallo en lugar de los de un fallo crítico."
+    },
+    {
+        "Nombre": "Enano",
+        "Descripción": "Una criatura con este rasgo es un miembro de la herencia Enano. Los enanos son gente menuda que suelen vivir bajo tierra y tener visión en la oscuridad. Una habilidad con este rasco solo puede ser usada y seleccionada por enanos. Un objeto con este rasgo es creado y usado por enanos."
+    },
+    {
+        "Nombre": "Encantamiento",
+        "Descripción": "Escuela de magia que estudia el control mental, alteración emocional y otros efectos mentales."
+    },
+    {
+        "Nombre": "Enfermedad",
+        "Descripción": "Un efecto con este rasgo aplica una o mas enfermedades. Una enfermedad suele ser una aflicción."
+    },
+    {
+        "Nombre": "Enfocado",
+        "Descripción": "Un objeto con este rasgo puede dar un punto de foco. Este punto de foco está separado de la reserva de foco y no cuenta para el límite de la reserva de foco. Se puede obtener este beneficio si se tiene una reserva de foco, y pueden haber restricciones sobre como usar este punto. No se puede obtener más de un punto de foco de objetos enfocados al día."
+    },
+    {
+        "Nombre": "Esbirro",
+        "Descripción": "Criaturas que sirven directamente a otra criatura. Tus esbirros actúan en tu turno en combate, una vez por turno, cuando gastas una acción para comandarlos. Para un compañero animal, utilizas comandar animal; para un esbirro que es parte de un hechizo o efecto mágico, como un esbirro convocado, mantienes el efecto; si no se especifica, utilizas un comando verbal con una acción que tiene los rasgos auditivo y concentrar. Si no se les comanda, los esbirros no utilizan acciones excepto para defenderse o escapar de peligro obvio. Si se les deja desatendidos suficiente tiempo, normalmente 1 minuto, esbirros descerebrados no suelen actuar, los compañeros animales siguen sus instintos y esbirros conscientes actúan como les place. Puedes tener un máximo de 4 esbirros bajo tu control. Un esbirro solo tiene dos acciones y 0 reacciones por turno, aunque algunas condiciones (como ralentizado o acelerado) o habilidades pueden darles acciones adicionales o reacciones. Alteraciones a las acciones de un esbirro ocurren cuando obtienen acciones esa ronda. Un esbirro no puede controlar otras criaturas."
+    },
+    {
+        "Nombre": "Escudriñamiento",
+        "Descripción": "Un efecto con este rasgo te permite ver, oir o obtener información sensorial a distancia a través de un sensor o aparato, en lugar de tus ojos y oídos."
+    },
+    {
+        "Nombre": "Espíritu",
+        "Descripción": "Efectos con este Rasgo pueden afectar a criaturas con esencia espiritual y pueden provocar daño de espíritu. Una criatura con este rasgo se define por su esencia espiritual y suelen carecer de forma material."
+    },
+    {
+        "Nombre": "Estructura",
+        "Descripción": "Un hechizo, activación de objeto o habilidad con este rasgo crea un edificio o construcción mágica. La estructura debe crearse en una parcela vacía. La estructura se adapta al terreno natural, adoptando los requisitos estructurales para construirse ahi. La estructura se adapta alrededor de pequeños detalles como charcos o piedras, pero no puede crearse en al agua u otras superficies no sólidas. Si se crea en la nieve, dunas de arena u otras estructuras blandas con una superficie sólida debajo, los cimientos de la estructura (si tiene) alcanzan la tierra sólida. Si la estructura se encuentra en terreno sólido pero superficie inestable, como un pantano o un área de terremotos, realiza una prueba plana con CD 3 cada día. En caso de fallo, la estructura se empieza a hundir o colapsar. La estructura no hace daño a las criaturas en el área cuando aparece y no puede crearse en un area muy poblada. Cualquier criatura en el area en el momento de la creación, aparece en el interior de la estructura sin dañar y con una ruta de escape clara. Una criatura en el interior de la estructura cuando desaparece no sufre daño y aterriza en el suelo sin sufrir daño en caso de que se encontrara en niveles superiores de la estructura."
+    },
+    {
+        "Nombre": "Etéreo",
+        "Descripción": "Criaturas con este rasgo son nativas del plano Etéreo. Pueden sobrevivir en las condiciones básicas del Plano Etéreo."
+    },
+    {
+        "Nombre": "Evocación",
+        "Descripción": "Escuela de magia que estudia la energía y las fuerzas elementales."
+    },
+    {
+        "Nombre": "Exploración",
+        "Descripción": "Una actividad con este rasgo requiere más de un turno para usarse y suele poder usarse sólo durante el modo exploración."
+    },
+    {
+        "Nombre": "Explorador",
+        "Descripción": "Relacionado con la clase Explorador."
+    },
+    {
+        "Nombre": "Extradimensional",
+        "Descripción": "Este efecto o objeto crea un espacio extradimensional. Un efecto extradimensional dentro de otro espacio extradimensional deja de funcionar hasta que se retira."
+    },
+    {
+        "Nombre": "Fatal",
+        "Descripción": "Este rasgo incluye un tamaño de dado. En un golpe Crítico, el dado del arma incrementa al tamaño indicado en lugar del tamaño normal y el arma añade un dado adicional del tamaño indicado."
+    },
+    {
+        "Nombre": "Feérico",
+        "Descripción": "Criaturas del Primer Mundo."
+    },
+    {
+        "Nombre": "Fijada",
+        "Descripción": "Un arma con este rasgo debe combinarse con otra pieza de equipo para usarse. El rasgo indica a que objeto debe fijarse el arma. Debes empuñar o vestir el objeto al que fijas el arma para poder atacar con ella. Por ejemplo, las púas de escudo se fijan a un escudo, permitiéndote atacar con las púas en lugar del golpe de escudo. Un arma fijada normalmente se atornilla o construye en el objeto en el que se fija y normalmente un objeto solo puede tener un arma fijada. Un arma fijada puede fijarse a un objeto con 10 minutos y una tirada de Artesanía CD 10; esto incluye el tiempo que se necesita para quitar el arma del antiguo objeto, si hiciera falta. Normalmente un arma no puede usarse si el objeto a la que se fija se rompe. Se el objeto se destruye, el arma fijada suele poderse rescatar."
+    },
+    {
+        "Nombre": "Flexible",
+        "Descripción": "Esta armadura no impide la mayoría de las acciones. No aplicas el penalizador a acrobacias ni atletismo."
+    },
+    {
+        "Nombre": "Floritura",
+        "Descripción": "Acciones con este rasgo con técnicas especiales que requieren mucho esfuerzo como para realizarlas con frecuencia. Sólo puede utilizarse una acción de Floritura por turno."
+    },
+    {
+        "Nombre": "Fortuna",
+        "Descripción": "Un efecto con este rasgo altera de forma positiva como tiras el dado. No puedes beneficiarte de dos efectos de fortuna afectando a una misma tirada. Si muchos efectos se aplicarían, elije cual usar. Si un efecto de Fortuna y uno de desventura aplican, se anulan."
+    },
+    {
+        "Nombre": "Frío",
+        "Descripción": "Efectos con este rasgo provocan daño de frío. Criaturas con este rasgo tienen una conexión mágica con el frío."
+    },
+    {
+        "Nombre": "Fuego",
+        "Descripción": "Efectos con este rasgo provocan daño de fuego o conjuran o manipulan fuego. Los que manipulan el fuego no tienen efecto en un área sin fuego. Criaturas con este rasgo están formadas principalmente por fuego o tienen una conexión mágica con el fuego. Planos con este rasgo se componen de fuego que arde continuamente sin una fuente. Estos planos son extremadamente hostiles contra criaturas que no son de fuego. Los materiales ignífugos que no estén protegidos arden de forma inmediata y las criaturas que no tengan ropa que les proteja del fuego arden, normalmente sufriendo 1d6 de daño de fuego persistente. Criaturas extraplanares reciben daño ambiental moderado (dependiendo de la zona en la que se encuentren). Criaturas de hielo se encuentras muy incómodas si no se funden directamente."
+    },
+    {
+        "Nombre": "Fuerza",
+        "Descripción": "Efectos con este rasgo provocan daño de fuerza o crean objetos de pura fuerza mágica."
+    },
+    {
+        "Nombre": "Fúngico",
+        "Descripción": "Criaturas Fúngicas, diferentes de otros hongos."
+    },
+    {
+        "Nombre": "Furia",
+        "Descripción": "Debes estar en Furia para utilizar habilidades con este rasgo y estas terminan si dejas de estar en furia."
+    },
+    {
+        "Nombre": "Gemela",
+        "Descripción": "Armas con este rasgo se usan en pareja. Cuando atacas con un arma con este rasgo, añades un bonificador por circunstancia al daño igual al número de dados del arma si has atacado previamente con un arma diferente del mismo tipo en este turno. Las armas tienen que ser del mismo tipo, pero no tienen que tener las mismas runas."
+    },
+    {
+        "Nombre": "General",
+        "Descripción": "Un tipo de dote que cualquier personaje puede seleccionar independientemente de su raza o clase, mientras cumpla los requisitos. Puedes seleccionar una dote con este rasgo cuando tu clase de otorgue una dote General."
+    },
+    {
+        "Nombre": "Gigante",
+        "Descripción": "Criaturas humanoides masivas."
+    },
+    {
+        "Nombre": "Gnomo",
+        "Descripción": "Una criatura con este rasgo pertenece a la herencia Gnomo. Son gente pequeña con habilidades mágicas que buscan nuevas experiencias y suelen tener visión en la penumbra. Una habilidad con este rasgo sólo puede seleccionarse por gnomos. Un arma con este rasgo es creada y usada por gnomos."
+    },
+    {
+        "Nombre": "Goblin",
+        "Descripción": "Una criatura con este rasgo es un goblinoide pequeño y frenético. Suelen tener visión en la oscuridad. Una habilidad con este rasgo sólo puede seleccionarse por goblins. Un arma con este rasgo es creada y usada por goblins."
+    },
+    {
+        "Nombre": "Guerrero",
+        "Descripción": "Relativo a la clase Guerrero."
+    },
+    {
+        "Nombre": "Habilidad",
+        "Descripción": "Una doto general con este rasgo mejora tus habilidades y sus acciones o te otorga nuevas acciones para una habilidad. Una dote con este rasgo puede seleccionarse cuando tu clase te otorga una dote de habilidad o general. Dotes de arquetipo que tienen este rasgo pueden seleccionarse en lugar de una dote de habilidad si tienes la dote de dedicación de dicho arquetipo."
+    },
+    {
+        "Nombre": "Hechicero",
+        "Descripción": "Relativo a la clase Hechicero."
+    },
+    {
+        "Nombre": "Herida",
+        "Descripción": "Un veneno con este rasgo se activa aplicándolo a un arma o munición y afecta al objetivo del primer impacto realizado con este objeto envenenado. Si el golpe es un éxito y causa daño perforante o cortante, el objetivo debe realizar una tirada de salvación contra el veneno. Si el golpe falla, el objetivo no resulta afectado, pero el veneno permanece en el arma y puedes volver a intentarlo. En un fallo crítico o si el golpe no provoca daño cortante o perforante por alguna otra razón, el veneno se gasta pero el objetivo no se ve afectado. Solo una veneno de herida se puede aplicar a un arma o munición cada vez."
+    },
+    {
+        "Nombre": "Humano",
+        "Descripción": "Una criatura con este rasgo es miembro de la herencia Humano. Son gente muy diversa conocidos por su capacidad de adaptación. Una habilidad con este rasgo solo puede ser seleccionada o usada por humanos."
+    },
+    {
+        "Nombre": "Humanoide",
+        "Descripción": "Criaturas que razonan y actúan como los humanos. Normalmente están erguidos y tienen dos brazos y dos piernas."
+    },
+    {
+        "Nombre": "Ilusión",
+        "Descripción": "Efectos y objetos mágicos con este rasgo involucran un estimulo sensorial falso. Magia con este rasgo crea un estimulo sensorial falso. A veces las ilusiones permiten a criaturas la oportunidad de descreer el hechizo, lo que permite a la criatura ignorar el hechizo si lo consigue. Normalmente pasa cuando una criatura busca, interactúa o gasta acciones para contactar con la ilusión, comprando el resultado de la tirada de percepción (o otra tirada que elija el DJ) contra la CD de conjuros del lanzador. Las ilusiones mentales normalmente proporcionan reglas en la descripción del hechizo para descreer el efecto (normalmente a través de una tirada de voluntad). Si una criatura contacta con una ilusión de manera que probaría que no es lo que parece, la criatura puede saber que existe una ilusión, pero aún no puede ignorar la ilusión sin descreerla. Descreer una ilusión visual puede hacer que ésta y aquello que bloquea, parezca borroso, lo cual puede bloquear suficiente la visión como para dar cobertura al otro lado."
+    },
+    {
+        "Nombre": "Impulsora",
+        "Descripción": "Añades la mitad de tu modificador de fuerza (si es positivo) a las tiradas de daño con un arma a distancia que tenga este rasgo. Si tienes un modificador de fuerza negativo, añades la totalidad del modificador de fuerza en su lugar."
+    },
+    {
+        "Nombre": "Incapacitación",
+        "Descripción": "Una habilidad con este rasgo puede sacar a un personaje por completo de la pelea o incluso matarlo y es difícil usarlo contra una criatura más poderosa. Si un hechizo tiene este rasgo, cualquier criatura que tenga de más del doble del nivel del hechizo, trata el resultado de la tirada para evitar ser incapacitado por el hechizo como un grado de resultado mayor, o el resultado de la tirada del lanzador para incapacitar a la criatura como un grado de éxito peor. Si algún otro efecto tiene este rasgo, una criatura de nivel superior al objeto, criatura o peligro que genera el efecto obtiene los mismos beneficios."
+    },
+    {
+        "Nombre": "Infernal",
+        "Descripción": ""
+    },
+    {
+        "Nombre": "Infundido",
+        "Descripción": "Un objeto alquímico con este rasgo tiene un tiempo limitado antes de volverse inerte. Cualquier efecto no permanente de tus objetos alquímicos con este rasgo, a excepción de aflicciones como venenos retardados, acaban cuando realizas de nuevo tus preparativos diarios."
+    },
+    {
+        "Nombre": "Ingerido",
+        "Descripción": "Un veneno con este rasgo se activa aplicándolo a comida o bebida para ser consumido por una criatura viva, o colocándolo directamente en la boca de una criatura viva. Una criatura intenta una tirada de salvación contra un veneno de este tipo cuando lo consume. El tiempo de incubación normalmente oscila entre 1 minuto y un 1 día."
+    },
+    {
+        "Nombre": "Inhalado",
+        "Descripción": "Un veneno con este rasgo se activa al liberarlo de su contenedor. Una vez liberado, el veneno crea una nube que ocupa un cubo de 10 pies y dura 1 minuto o hasta que un viento fuerte disipe la nube. Cada criatura que entre en la nube, queda expuesta al veneno y debe intentar una tirada de salvación contra él; una criatura que sepa que está el veneno antes de entrar en la nube puede usar una acción para contener el aliento y obtener un bonificador +2 por circunstancia a las tiradas de salvación durante 1 ronda."
+    },
+    {
+        "Nombre": "Investido",
+        "Descripción": "Un personaje puede investir sólo 10 objetos mágicos con este rasgo. Ninguno de los efectos mágicos de un objeto se aplican si el personaje no lleva el objeto investido, ni puede activarlo, aunque el personaje puede recibir beneficios por llevar el objeto físico ( como un gorro que te protege de la lluvia)."
+    },
+    {
+        "Nombre": "Juramento",
+        "Descripción": "Los juramentos añaden principios a tu código. Normalmente sólo puedes tener una dote con este rasgo."
+    },
+    {
+        "Nombre": "Legal",
+        "Descripción": "Efectos con este rasgo manipulan energía de los planos exteriores alineados con la ley y son antiéticos a siervos divinos caóticos o de deidades caóticas. Una criatura con este rasgo es de alineamiento Legal."
+    },
+    {
+        "Nombre": "Letal",
+        "Descripción": "En un golpe critico, el arma añade un dado de daño igual al tamaño indicado. Tira este dado tras duplicar el daño del arma. Esto incrementa a dos dados si el arma tiene una runa de golpe mayor y a tres dados si el arma tiene una runa de golpe superior. Por ejemplo, un florete con una runa de golpe mayor provoca 2d8 de daño perforante extra en un golpe crítico. Una habilidad que cambia el dado de arma normal no cambia el dado de Letal. "
+    },
+    {
+        "Nombre": "Letanía",
+        "Descripción": "Son hechizos especiales de devoción, normalmente de campeón y requieren una sola acción, que normalmente dan inmunidad temporal a otra letanías."
+    },
+    {
+        "Nombre": "Lingüístico",
+        "Descripción": "Un efecto con este rasgo depende de comprensión lingüística. Un efecto lingüístico que tenga como objetivo una criatura sólo tiene efecto si la criatura entiende el lenguaje que usas."
+    },
+    {
+        "Nombre": "Luz",
+        "Descripción": "Los efectos con este rasgo vencen a oscuridad no mágica en el área y pueden contrarrestar oscuridad mágica. Normalmente debes usar de objetivo la oscuridad mágica con tu luz mágica directamente para contrarrestar la oscuridad, pero algunos hechizos de luz lo intentan automáticamente."
+    },
+    {
+        "Nombre": "Mágico",
+        "Descripción": "Algo con este rasgo está imbuido con energía mágica sin vincular a una tradición mágica específica. Algunos objetos o efectos están relacionados con una tradición concreta. En esos casos, el objeto tiene los rasgos arcano, divino, ocultista o primigenio en lugar de mágico. Cualquiera de estos rasgos indica que el objeto es mágico."
+    },
+    {
+        "Nombre": "Mago",
+        "Descripción": "Relativo a la clase Mago."
+    },
+    {
+        "Nombre": "Maldición",
+        "Descripción": "Es un efecto que otorga una aflicción a largo plazo en una criatura. Siempre son mágicas y suelen ser consecuencia de un hechizo o trampa. Efectos con este rasgo sólo puede quitarse con efectos que especifiquen que tratan Maldiciones."
+    },
+    {
+        "Nombre": "Maligno",
+        "Descripción": "Efectos con este rasgo manipulan energía de Planos Exteriores alineados al mal y son antiéticos a siervos divinos buenos o de deidades buenas. Una criatura con este rasgo es de alineamiento malvado."
+    },
+    {
+        "Nombre": "Manipular",
+        "Descripción": "Debes manipular físicamente un objeto o hacer gestos para usar una acción con este rasgo. Criaturas que no tengan miembros apropiados no pueden realizar acciones con este rasgo. Acciones con este rasgo suelen activar reacciones."
+    },
+    {
+        "Nombre": "Mano Libre",
+        "Descripción": "Este arma no ocupa tu mano, normalmente porque es parte de tu armadura. Un arma con este rasgo no puede ser desarmada. Puedes usar tu mano cubierta por tu arma con este rasgo para empuñar otros objetos, realizar acciones de manipular y tal. No puedes atacar con un arma con este rasgo si tienes algo en esa mano o la estás usando. Cuando no empuñas nada en esa mano y no la estás utilizando, puedes utilizar habilidades que requieren que tengas la mano libre y las que requieren que tengas un arma en esa mano. Cada una de tus manos sólo puede tener un arma con este rasgo."
+    },
+    {
+        "Nombre": "Mecánico",
+        "Descripción": "Un peligro con este rasgo es un objeto físico construido."
+    },
+    {
+        "Nombre": "Mediano",
+        "Descripción": "Relativo a la Herencia Mediano."
+    },
+    {
+        "Nombre": "Mental",
+        "Descripción": "Un efecto con este rasgo puede alterar la mente del objetivo. No tiene efecto en un objeto o si la criatura es descerebrada."
+    },
+    {
+        "Nombre": "Metamágico",
+        "Descripción": "Acciones con este rasgo modifican las propiedades de tus hechizos. Debes usar una acción de metamagia directamente antes de lanzar el hechizo que quieres alterar. Si utilizas cualquier acción (incluyendo acciones gratuitas o reacciones) que no sean lanzar un hechizo justo después, pierdes los beneficios de la acción de metamagia. Los beneficios también se pierden si tu turno acaba antes de que lances el hechizo. Cualquier efecto añadido por una acción de metamagia, son parte del efecto del hechizo, no de la acción en si misma."
+    },
+    {
+        "Nombre": "Miedo",
+        "Descripción": "Efectos con este rasgo evocan la emoción del miedo y siempre tienen los rasgos mental y emoción."
+    },
+    {
+        "Nombre": "Monitor",
+        "Descripción": "Criaturas que provienen de los planos neutrales de las esferas exteriores."
+    },
+    {
+        "Nombre": "Monje",
+        "Descripción": "Relativo a la clase monje."
+    },
+    {
+        "Nombre": "Morfismo",
+        "Descripción": "Efectos con este rasgo son efectos que alteran parcialmente la forma de una criatura. Cualquier golpe otorgado por un efecto de morfismo se considera mágico. Una criatura puede ser afectada por multiples hechizos de morfismo a la vez, pero si se aplica a la misma parte del cuerpo más de una vez, el segundo efecto intenta contrarrestar el primero (igual que un efecto de polimorfismo, descrito en ese rasgo). Tues efectos de morfismo pueden acabar si sufres un efecto de polimorfismo y ese efecto sobrescribe el efecto de morfismo. El DJ determina que efectos de morfismo pueden usarse juntos y cuales no."
+    },
+    {
+        "Nombre": "Movimiento",
+        "Descripción": "Una acción con este rasgo involucra mover de un espacio a otro."
+    },
+    {
+        "Nombre": "Muerte",
+        "Descripción": "Un efecto con este rasgo te mata directamente si te reduce a 0 PG. Algunos efectos pueden acercarte a la muerte o matarte sin necesidad de reducirte a 0PG."
+    },
+    {
+        "Nombre": "Muerto viviente",
+        "Descripción": "Criaturas que vivieron una vez y, tras morir, fueron infundidas con energía de vacío y magia impía de corrupción de almas. Cuando se reduce a 0PG, una criatura con este rasgo es destruida. Criaturas Muerto Viviente sufren daño por energía de vitalidad y se curan con energía de vacío y no se benefician de curación por efectos de vitalidad."
+    },
+    {
+        "Nombre": "Multiclase",
+        "Descripción": "Arquetipos con este rasgo representan diversificar tu entrenamiento en la especialidad de otra clase. No puedes seleccionar una dedicación de Arquetipo multiclase si eres miembro de dicha clase."
+    },
+    {
+        "Nombre": "Mutágeno",
+        "Descripción": "Tipo especial de elixir que transforma el cuerpo y la mente del sujeto. Normalmente solo los alquimistas tienen pericia para fabricarlos. Un mutágeno siempre otorga uno o mas efectos beneficiosos (beneficios) y uno o mas perjudiciales (inconvenientes). Son efectos de polimorfismo y otros efectos de polimorfismo intentan contrarrestar el efecto existente; la tirada de contrarrestar utiliza el nivel del objeto y un modificador igual a la CD del objeto de ese nivel -10."
+    },
+    {
+        "Nombre": "Vacío",
+        "Descripción": "Efectos con este rasgo curan a criaturas Muerto Viviente con energía de vacío, provocan daño de vacío a criaturas vivas o manipulan energía de vacío. Planos con este rasgo son espacios vacíos y vastos que chupan la vida de los vivos. Tienden a ser planos solitarios y encantados, sin color y lleno de vientos que mecen los gemidos de los muertos. Al final de cada ronda, las criaturas vivas sufren un mínimo de daño de vacío. En las áreas mas fuertes del plano del vacío, podrían sufrir daño moderado o severo. Este daño tiene el rasgo muerte y si una criatura es reducida a 0PG por este daño y muere, se convierte en cenizas y se alza como fantasma (wraith)."
+    },
+    {
+        "Nombre": "Nigromancia",
+        "Descripción": "Relativo a la escuela de magia que estudia las fuerzas de la vida y la muerte."
+    },
+    {
+        "Nombre": "No letal",
+        "Descripción": "Ataques con armas que tengan este rasgo son no letales y se usan para dejar criaturas inconscientes en lugar de matarlas. Puedes usar un arma no letal para hacer un ataque letal con un penalizar de -2 por circunstancia."
+    },
+    {
+        "Nombre": "Ocultista",
+        "Descripción": "Tradición mágica que se basa en lo bizarro y en misterios efímeros. Todo lo que tenga este rasgo es Mágico. Criaturas con este rasgo se constituyen o tienen una fuerte conexión con la magia ocultista."
+    },
+    {
+        "Nombre": "Orco",
+        "Descripción": "Relativo a la herencia Orco. Gente de piel verde que suele tener visión en la oscuridad. Una habilidad con este rasgo solo puede usarse o seleccionarse por orcos. Un objeto con este rasgo se ha creado y es usado por orcos."
+    },
+    {
+        "Nombre": "Oscuridad",
+        "Descripción": "Efectos con este rasgo extinguen luz no mágica en el area y pueden contrarrestar luz mágico de menor poder. Normalmente debes elegir como objetivo la luz mágica con tu oscuridad para contrarrestarla pero algunos hechizos de oscuridad lo intentan automáticamente."
+    },
+    {
+        "Nombre": "Parada",
+        "Descripción": "Este arma puede usarse de manera defensiva para bloquear ataques. Mientras lleves ester arma, si tu competencia con ella es entrenada o superior, puedes gastar un acción para posicionar tu arma de forma defensiva, obteniendo un +1 por circunstancia a la CA hasta el inicio de tu siguiente turno."
+    },
+    {
+        "Nombre": "Pergamino",
+        "Descripción": "Contiene un solo hechizo que se puede lanzar sin un espacio de conjuro."
+    },
+    {
+        "Nombre": "Pícaro",
+        "Descripción": "Relativo a la clase Pícaro."
+    },
+    {
+        "Nombre": "Planta",
+        "Descripción": "Criaturas vegetales tienen este rasgo. Son distintas de plantas normales. Efecto mágicos con este rasgo manipulan o conjuran plantas o materia de planta de alguna manera. Efectos que manipulan las plantas no tienen efectos si no hay areas con plantas."
+    },
+    {
+        "Nombre": "Poción",
+        "Descripción": "Líquido mágico consumible activado al beberse."
+    },
+    {
+        "Nombre": "Poco común",
+        "Descripción": "Algo de esta rareza requiere entrenamiento especial o proviene de una cultura o una parte del mundo concreta. Algunas opciones de personaje dan acceso a opciones poco comunes y el DJ puede permitir acceso a cualquiera. Se sabe menos de criaturas poco comunes que de criaturas comunes. Normalmente no se pueden invocar. El CD de recordar conocimiento de estas criaturas incrementa en 2. "
+    },
+    {
+        "Nombre": "Polimorfismo",
+        "Descripción": "Efectos que transforman al objetivo en una nueva forma. Un objetivo no puede sufrir mas de un efecto de polimorfismo a la vez. Si entra en contacto con un segundo efecto de polimorfismo, el segundo efecto intenta contrarrestar al primero. Si lo consigue, toma efecto, si falla, no tiene efecto. Cualquier golpe otorgado específicamente por un efecto de polimorfismo se considera mágico. A menos que se especifique lo contrario, los efectos de polimorfismo no permiten al objetivo tomar la apariencia de un individuo específico. Si obtienes una forma de batalla con un hechizo de polimorfismo, las estadísticas especiales pueden ajustarse sólo por bonificadores de circunstancia, estatus y penalizadores. Excepto que se indique lo contrario, forma de batalla te impide lanzar hechizos, hablar y usar la mayoría de las acciones de manipular que requieren manos (Si se duda sobre si se puede hacer una acción, el DJ decide). Tu equipo se absorbe; las habilidades constantes de tu equipo aun funcionan, pero no puedes activar objetos. Pierdes tus velocidades y obtienes las de la forma de batalla. Si un efecto de polimorfismo te incrementa el tamaño, debes tener espacio para ello o el efecto se interrumpe."
+    },
+    {
+        "Nombre": "Posesión",
+        "Descripción": "Efectos con este rasgo permiten a una criatura proyectar su mente y espíritu en el objetivo. Una criatura inmune a efectos mentales no puede usar un efecto de posesión. Mientras posee a un objetivo, el cuerpo del poseedor queda inconsciente (y no puede despertar de forma normal), a menos que el efecto de posesión permita a la criatura entrar físicamente en el objetivo. Cuando el objetivo recibe daño, el poseedor sufre la mitad de ese daño como daño mental. Un poseedor pierde los beneficies de cualquiera de sus habilidades o hechizos que afectan su cuerpo físico pero obtiene los beneficios de las habilidades y hechizos que afectan el cuerpo poseído. Un poseedor no puede utilizar cualquiera de las habilidades del objetivo que sean puramente físicas, y no puede usar ninguna de las suyas excepto hechizos y habilidades mentales puras. El DJ decide si una habilidad es puramente física o puramente mental. Un poseedor debe utilizar el modificador de Ataque, CA, Fortaleza, Reflejos, Percepción y habilidades físicas del objetivo y su propia Voluntad, habilidades mentales, modificador de ataque y CD de Hechizos; Beneficios de objetos investidos se aplican como sean relevantes (los objetos investidos del poseedor aplican cuando usa sus propios valores y los del objetivo cuando se usan los valores del objetivo). Un poseedor no obtiene beneficios de lanzar conjuros que normalmente solo afectan al lanzador, dado que no es su cuerpo. El poseedor debe usar sus propias acciones para hacer actuar a la criatura poseída. Si un poseedor llega a 0 puntos de Golpe por cualquier combinación de daño a su cuerpo verdadero o mental por la posesión, queda inconsciente como es normal y la posesión termina en ese instante. Si el objetivo alcanza los 0 puntos de golpe primero, el poseedor puede quedar inconsciente con el cuerpo y seguir con la posesión o terminar los efectos como acción gratuita y volver a su cuerpo. Si el objetivo muere, la posesión acaba inmediatamente y el poseedor queda aturdido 1 minuto."
+    },
+    {
+        "Nombre": "Posición",
+        "Descripción": "Estrategia de combate general en la que entras utilizando una acción con este rasgo y permaneces en ella un tiempo. Una posición dura hasta que pierdes el conocimiento, sus requisitos(si tiene) se violan, el encuentro termina o utilizas otra acción de Posición, lo que pase primero. Tras utilizar una acción con este rasgo, no puedes utilizar otra durante 1 ronda. Puedes entrar o quedarte en esa posición solo en modo de encuentro. Puedes cancelar una posición."
+    },
+    {
+        "Nombre": "Vitalidad",
+        "Descripción": "Efectos con este rasgo curan criaturas vivas con energía de la Forja de la Creación, provocan daño de vitalidad a Muertos Vivientes o manipulan energía de vitalidad. Estos planos desbordan energía vital. Los colores brillan mas, los fuegos arden con mas fuerza, el ruido es mas fuerte y las sensaciones más intensas. Al final de cada turno, una criatura muerto viviente recibe un mínimo de daño de vitalidad por ambiente. En las áreas mas fuertes del plano de la vitalidad, pueden recibir daño moderado o incluso severo. Aunque pueda parecer seguro para criaturas vivas, los planos de vitalidad presentan diferentes peligros. Una criatura viva obtiene una cantidad de PG igual al daño que recibiría un muerto viviente en el mismo área. Si esto incrementaría la vida de una criatura por encima de sus PG máximos, el exceso se convierte en PG temporales. A diferencia de lo normal, estos PG temporales se combinan y se mantienen hasta que una criatura abandona el plano. Si los PG temporales de un plano de vitalidad llegan a exceder el máximo de PG de una criatura, ésta explota en una sobrecarga de energía de vitalidad, que se reparte y crea nuevas almas."
+    },
+    {
+        "Nombre": "Precioso",
+        "Descripción": "Materiales con propiedades especiales tienen este rasgo. Pueden sustituirse como materiales básicos al Fabricar objetos."
+    },
+    {
+        "Nombre": "Predicción",
+        "Descripción": "Efectos con este rasgo determinan lo que es probable que pase en el futuro cercano."
+    },
+    {
+        "Nombre": "Presa",
+        "Descripción": "Puedes utilizar un arma con este rasgo y una tirada de atletismo para agarrar incluso si no tienes una mano libre. Utilizar el alcance de este arma (si es diferente del tuyo) y añades el bonificador por objeto al ataque del arma como bonificador por objeto a la tirada de atletismo. Si fallas críticamente la tirada para agarrar cuando usas el arma, puede soltarla para aceptar los efectos de un fallo en lugar de los de un fallo crítico."
+    },
+    {
+        "Nombre": "Presionar",
+        "Descripción": "Acciones con este rasgo te permiten seguir ataques anteriores. Una acción con este rasgo se puede utilizar sólo si estás sufriendo actualmente un penalizar por ataque múltiple. No puedes utilizar una acción de presionar cuando no es tu turno, incluso si utilizas la acción de preparar. Alguna acciones con este rasgo también dan un efecto al fallo. Los efectos que se añaden al fallo no se aplican en fallos críticos. Si tu acción de presionar tiene éxito, puedes elegir aplicar el efecto de fallo en su lugar. (Por ejemplo, puedes querer hacer esto si el ataque no haría daño debido a resistencias)."
+    },
+    {
+        "Nombre": "Primigenio",
+        "Descripción": "Relativo a la tradición mágica primigenia, conectando con el mundo natural y los instintos. Cualquier cosa con este rasgo es mágico. Una criatura con este rasgo es principalmente o tiene una fuerte conexión con la magia primigenia."
+    },
+    {
+        "Nombre": "Puñalada Trapera",
+        "Descripción": "Cuando atacas a una criatura desprevenida, este arma hace 1 de daño de precisión extra además del daño normal. El daño de precisión incrementa a 2 si el arma es +3."
+    },
+    {
+        "Nombre": "Raro",
+        "Descripción": "Esta rareza indica que es difícil de encontrar en el mundo. Una dote, hechizo, objeto o similar con este rasgo solo está disponible para los jugadores si el DJ decide incluirlo en el juego, normalmente a través de descubrimiento durante el juego. Criaturas con este rasgo son raras. Normalmente no se les puede invocar. El CD de recordar conocimiento para estas criaturas incrementa en 5."
+    },
+    {
+        "Nombre": "Revelación",
+        "Descripción": "Efectos con este rasgo muestran las cosas como realmente son."
+    },
+    {
+        "Nombre": "Revés",
+        "Descripción": "Puedes utilizar la inercia de un ataque fallido con un arma con este rango para tu siguiente ataque. Tras fallar con este arma en tu turno, puedes ganar un bonificar +1 por circunstancia a tu siguiente ataque con este arma antes del final de este turno."
+    },
+    {
+        "Nombre": "Ruidosa",
+        "Descripción": "Una armadura con este rasgo hace ruido y es posible que alerte a otros de tu presencia. El penalizador de este arma se aplica a las tiradas de sigilo incluso si dispones de la fuerza necesaria."
+    },
+    {
+        "Nombre": "Saga",
+        "Descripción": "Lanzadores de hechizos pertenecientes a un aquelarre."
+    },
+    {
+        "Nombre": "Salpicadura",
+        "Descripción": "Cuando utilizas un arma o efecto con este rasgo, no añades tu modificador de fuerza al daño. Un arma o efecto de salpicadura produce el daño indicado de salpicadura al objetivo en caso de fallo, éxito o éxito crítico. En un fallo crítico, el arma o efecto falla completamente y no provoca daño. Añade el daño por salpicadura al daño inicial antes de aplicar resistencias o debilidades. No multipliques el daño de salpicadura en caso de crítico."
+    },
+    {
+        "Nombre": "Secreto",
+        "Descripción": "El DJ realiza estas tiradas de habilidad en secreto."
+    },
+    {
+        "Nombre": "Semielfo",
+        "Descripción": "Relativo a la herencia mixta SemiElfo."
+    },
+    {
+        "Nombre": "Semiorco",
+        "Descripción": "Relativo a la herencia mixta SemiOrco."
+    },
+    {
+        "Nombre": "Sin armas",
+        "Descripción": "Un ataque con este rasgo utiliza tu cuerpo en lugar de un arma fabricada. Un ataque sin armas no es un arma, aunque tiene un grupo de armas y puede tener rasgos de arma. Un Ataque sin armas no puede ser desarmado. Tampoco requiere una mano libre, aunque un puño o algún otro apéndice puede servir como un arma sin armas."
+    },
+    {
+        "Nombre": "Sombra",
+        "Descripción": "Magia con este rasgo trata las sombras o la energía del Netherworld. Planos con este rasgo son umbrales con poca luz. En el Netherworld, el radio de todas las luces provenientes de una fuente de luz o un area de luz proveniente de un hechizo, se reduce a la mitad."
+    },
+    {
+        "Nombre": "Sónico",
+        "Descripción": "Un efecto con este rasgo solo funciona si provoca sonido, por lo que no funciona en areas de silencio o vacío. Es diferente de un hechizo auditivo que solo funciona si el objetivo puede oírlo. Puede provocar daño sónico."
+    },
+    {
+        "Nombre": "Sueño",
+        "Descripción": "Hace que una criatura se duerma o quede adormilada."
+    },
+    {
+        "Nombre": "Sutil",
+        "Descripción": "Un arma con este rasgo puede utilizar tu modificador de Destreza en lugar de Fuerza para las tiradas de ataque cuerpo a cuerpo. El daño sigue calculándose con Fuerza."
+    },
+    {
+        "Nombre": "Talismán",
+        "Descripción": "Pequeño objeto fijado a una armadura, escudo o arma (el objeto fijado). Debes empuñar o vestir el objeto para poder activar el talismán fijado. Una vez activado, el talismán se consume."
+    },
+    {
+        "Nombre": "Teletransporte",
+        "Descripción": "Un efecto con este rasgo mueve algo de un espacio a otro. No suele activar reacciones basadas en movimiento."
+    },
+    {
+        "Nombre": "Tiempo Libre",
+        "Descripción": "Un modo de juego en el que los personajes no están de aventuras. Los días pasan rápido en la mesa y los personajes pueden realizar actividades de largo tiempo."
+    },
+    {
+        "Nombre": "Tierra",
+        "Descripción": "Efectos con este rasgo manipulan o invocan tierra. Aquellos que manipulan tierra no tienen efecto en areas sin tierra. Criaturas con este rasgo están formadas principalmente por tierra o tienen una fuerte conexión mágica con la tierra. Los planos con este rasgo son mayormente sólidos. Los viajeros que lleguen a un plano de tierra se arriesgan a la asfixia a menos que encuentren una caverna o cueva dentro de la materia sólida del plano. Criaturas que no pueden excavar quedan sepultadas y deben intentar cavar hacia una bolsa de aire. Criaturas de aire lo tienen complicado, ya que apenas hay espacio para moverse."
+    },
+    {
+        "Nombre": "Trampa",
+        "Descripción": "Un peligro construido para estorbar."
+    },
+    {
+        "Nombre": "Trampa de Lazo",
+        "Descripción": "Trampas, normalmente de exploradores, que tienen reglas especiales para construirse rápido y usarse en el campo de batalla."
+    },
+    {
+        "Nombre": "Transmutación",
+        "Descripción": "Escuela mágica que estudia los cambios de forma de las cosas."
+    },
+    {
+        "Nombre": "Truco",
+        "Descripción": "Un hechizo que puedes lanzar a voluntad y que se sube automáticamente a la mitad de tu nivel redondeado hacia arriba."
+    },
+    {
+        "Nombre": "Único",
+        "Descripción": "Una rareza que indica que no hay mas como este. La CD de recordar conocimiento para criaturas con este rasgo incrementa en 10."
+    },
+    {
+        "Nombre": "Varita",
+        "Descripción": "Objeto que contiene un hechizo que puede lanzarse una vez al día."
+    },
+    {
+        "Nombre": "Veneno",
+        "Descripción": "Un efecto con este rasgo provoca veneno o daño por veneno. Un objeto con este rasgo es venenoso y puede causar una aflicción."
+    },
+    {
+        "Nombre": "Versátil",
+        "Descripción": "Un arma con este rasgo puede provocar daño diferente al indicado. Este raso indica el tipo de daño alternativo. Por ejemplo, un arma perforante con Versátil C puede provocar daño perforante o cortante. Tu eliges el tipo de daño cada vez que atacas."
+    },
+    {
+        "Nombre": "Versátil perforante",
+        "Descripción": "Un arma con este rasgo puede provocar daño diferente al indicado. Este raso indica el tipo de daño alternativo. Por ejemplo, un arma perforante con Versátil C puede provocar daño perforante o cortante. Tu eliges el tipo de daño cada vez que atacas."
+    },
+    {
+        "Nombre": "Versátil cortante",
+        "Descripción": "Un arma con este rasgo puede provocar daño diferente al indicado. Este raso indica el tipo de daño alternativo. Por ejemplo, un arma perforante con Versátil C puede provocar daño perforante o cortante. Tu eliges el tipo de daño cada vez que atacas."
+    },
+    {
+        "Nombre": "Versátil contundente",
+        "Descripción": "Un arma con este rasgo puede provocar daño diferente al indicado. Este raso indica el tipo de daño alternativo. Por ejemplo, un arma perforante con Versátil C puede provocar daño perforante o cortante. Tu eliges el tipo de daño cada vez que atacas."
+    },
+    {
+        "Nombre": "Vigorosa",
+        "Descripción": "Un arma con este rasgo se vuelve mas peligrosa con la inercia. Cuando atacas con ella más de una vez por turno, el segundo ataque obtiene un bonificador por circunstancia al daño igual al número de dados de daño del arma, y cualquier ataque posterior obtiene un bonificador por circunstancia al daño igual al doble de número de dados de daño del arma."
+    },
+    {
+        "Nombre": "Virulento",
+        "Descripción": "Aflicciones con este rasgo son más difíciles de eliminar. Debes conseguir dos éxitos consecutivos para reducir la etapa de una aflicción Virulenta en 1. Un éxito crítico reduce la etapa en 1 en lugar de 2."
+    },
+    {
+        "Nombre": "Volea",
+        "Descripción": "Un arma con este rasgo es menos efectiva en distancias cortas. Tus ataques contra objetivos que se encuentran a una distancia dentro del rango indicado, reciben un penalizador de -2."
+    }
+]

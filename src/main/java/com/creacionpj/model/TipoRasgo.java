@@ -1,0 +1,5 @@
+package com.creacionpj.model;
+
+public enum TipoRasgo {
+    ELFICO, HUMANO, HUMANOIDE, GENERAL, HABILIDAD, GUERRERO, VERSATILCORTANTE, SUTIL, AGIL, FUEGO, EVOCACION 
+}
