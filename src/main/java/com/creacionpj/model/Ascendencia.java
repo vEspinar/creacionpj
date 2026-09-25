@@ -5,44 +5,44 @@ import java.util.List;
 import com.creacionpj.utils.Constants;
 import jakarta.persistence.*;
 @Entity
-@Table(name=Constants.RAZA_TABLE_NOM)
-public class Raza {
+@Table(name=Constants.ASCENDENCIA_TABLE_NOM)
+public class Ascendencia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Enumerated(EnumType.STRING)
-    @Column(name=Constants.RAZA_NOM)
-    private TipoRaza raza;
+    @Column(name=Constants.ASCENDENCIA_NOM)
+    private TipoAscendencia ascendencia;
     @ElementCollection
-    @CollectionTable(name=Constants.RAZA_SUBRAZA, joinColumns = @JoinColumn(name=Constants.RAZA_FK))
+    @CollectionTable(name=Constants.ASCENDENCIA_HERENCIA, joinColumns = @JoinColumn(name=Constants.ASCENDENCIA_FK))
     @Enumerated(EnumType.STRING)
-    @Column(name=Constants.SUBRAZA_NOM)
-    private List<TipoSubraza> subRaza;
+    @Column(name=Constants.HERENCIA_NOM)
+    private List<TipoHerencia> herencia;
     @Column(name=Constants.VIDA_NOM)
     private int vida;
     @Column(name=Constants.TAMANO_NOM)
     private int size;
     @OneToMany (cascade = CascadeType.ALL)
-    @JoinColumn(name=Constants.ESTADISTICAS_RAZA)
+    @JoinColumn(name=Constants.ESTADISTICAS_ASCENDENCIA)
     private List<SubidaEstadistica> stats;
     @Column(name=Constants.VELOCIDAD_NOM)
     private int speed;
     @Column(name=Constants.IDIOMAS)
     private String idiomas;
     @OneToMany (cascade = CascadeType.ALL)
-    @JoinColumn(name=Constants.DOTES_RAZA)
+    @JoinColumn(name=Constants.DOTES_ASCENDENCIA)
     private List<Dote> dote;
     @Column(name=Constants.CANTIDAD_ESTADISTICAS)
     private int statsLibres;
     @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE})
-    @JoinTable(name=Constants.RASGOS_RAZA, joinColumns = @JoinColumn(name=Constants.RAZA_FK), inverseJoinColumns = @JoinColumn(name=Constants.RASGOS_ID))
+    @JoinTable(name=Constants.RASGOS_ASCENDENCIA, joinColumns = @JoinColumn(name=Constants.ASCENDENCIA_FK), inverseJoinColumns = @JoinColumn(name=Constants.RASGOS_ID))
     private List<Rasgo> rasgos;
 
-    public Raza(){}
-    public Raza(TipoRaza raza, List<TipoSubraza> sub, int vida, int size, List<SubidaEstadistica> stats, int statsLibres, int speed, String idiomas, 
+    public Ascendencia(){}
+    public Ascendencia(TipoAscendencia ascendencia, List<TipoHerencia> sub, int vida, int size, List<SubidaEstadistica> stats, int statsLibres, int speed, String idiomas, 
         List<Rasgo> rasgos, List<Dote> dote){
-            setRaza(raza);
-            setSubRaza(sub);
+            setAscendencia(ascendencia);
+            setHerencia(sub);
             setVida(vida);
             setSize(size);
             setStats(stats);
@@ -59,17 +59,17 @@ public class Raza {
         public Long getId() {
             return id;
         }
-        public void setRaza(TipoRaza raza) {
-            this.raza = raza;
+        public void setAscendencia(TipoAscendencia ascendencia) {
+            this.ascendencia = ascendencia;
         }
-        public TipoRaza getRaza() {
-            return raza;
+        public TipoAscendencia getAscendencia() {
+            return ascendencia;
         }
-        public void setSubRaza(List<TipoSubraza> subRaza) {
-            this.subRaza = subRaza;
+        public void setHerencia(List<TipoHerencia> herencia) {
+            this.herencia = herencia;
         }
-        public List<TipoSubraza> getSubRaza() {
-            return subRaza;
+        public List<TipoHerencia> getHerencia() {
+            return herencia;
         }
         public void setDote(List<Dote> dote) {
             this.dote = dote;

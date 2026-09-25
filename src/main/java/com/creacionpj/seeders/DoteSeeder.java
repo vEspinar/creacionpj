@@ -37,9 +37,9 @@ public class DoteSeeder {
     }
 
     public void cargaInicialDote(){
-        Dote impresionDeGrupo = crearDote(TipoDote.HABILIDAD, "Impresión de Grupo", List.of(new Requisito(TipoHabilidad.DIPLOMACIA,1)), "Puedes causar Impresión a dos objetivos en lugar de 1",
+        Dote impresionDeGrupo = crearDote(TipoDote.HABILIDAD, ConstantsDotes.IMPRESION_GRUPO_NOM, List.of(new Requisito(TipoHabilidad.DIPLOMACIA,1)), ConstantsDotes.IMPRESION_GRUPO_DESC,
         List.of(rs.getRasgo("GENERAL"), rs.getRasgo ("HABILIDAD")), null);
-    Dote intimidacionRapida = crearDote(TipoDote.HABILIDAD, "Intimidación Rápida", List.of(new Requisito(TipoHabilidad.INTIMIDACION,1)), "Intimidas en un asalto en lugar de en 1 minuto",
+    Dote intimidacionRapida = crearDote(TipoDote.HABILIDAD, ConstantsDotes.INTIMIDACION_RAPIDA_NOM, List.of(new Requisito(TipoHabilidad.INTIMIDACION,1)), ConstantsDotes.INTIMIDACION_RAPIDA_DESC,
         List.of(rs.getRasgo("GENERAL"), rs.getRasgo ("HABILIDAD")), null);
     Dote ataqueImprevisto = crearDote(TipoDote.CLASE, ConstantsDotes.ATAQUE_IMPREVISTO_NOM, List.of(new Requisito(TipoClase.GUERRERO), 
         new Requisito(TipoRequisito.NIVEL, 1)), ConstantsDotes.ATAQUE_IMPREVISTO_DESC, List.of(rs.getRasgo("Guerrero"), rs.getRasgo("Ataque")), new ArrayList<>());

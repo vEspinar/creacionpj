@@ -33,9 +33,9 @@ public class PersonajeController {
     }
 
     @PostMapping
-    public ResponseEntity<PersonajeDTO> crearPersonaje(@RequestParam Long claseId, @RequestParam Long razaId,
-            @RequestParam Long bagajeId, @RequestParam Long subRazaId){
-                return ResponseEntity.ok(personajeService.crearPersonaje(claseId, bagajeId, razaId, subRazaId)); 
+    public ResponseEntity<PersonajeDTO> crearPersonaje(@RequestParam Long claseId, @RequestParam Long ascendenciaId,
+            @RequestParam Long bagajeId, @RequestParam Long herenciaId){
+                return ResponseEntity.ok(personajeService.crearPersonaje(claseId, bagajeId, ascendenciaId, herenciaId)); 
             }
     @PutMapping("/{id}/subir-nivel")
     public ResponseEntity<PersonajeDTO> subirNivel(@PathVariable Long id){

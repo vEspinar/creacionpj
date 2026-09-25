@@ -15,12 +15,12 @@ public final class Constants {
     public static final String CLASES_FK = "Clase_FK";
     public static final String EQUIPO_FK = "Equipo_FK";
     public static final String BAGAJE_FK = "Bagaje_FK";
-    public static final String SUBRAZA_FK = "Subraza_FK";
+    public static final String HERENCIA_FK = "Herencia_FK";
     public static final String LIBRE_FK = "Libre_FK";
     public static final String HABILIDADES_FK = "Habilidades_FK";
     public static final String STATS_FK = "Estadisticas_FK";
     public static final String COMPETENCIA_FK = "Competencias_FK";
-    public static final String RAZA_FK = "Raza_FK";
+    public static final String ASCENDENCIA_FK = "Ascendencia_FK";
     public static final String REQUISITOS_FK = "Requisito_FK";
     public static final String RASGOS_FK = "Rasgos_FK";
     public static final String DOTES_FK = "Dotes_FK";
@@ -96,12 +96,12 @@ public final class Constants {
     public static final String HABS_NOM = "Habilidades";
     public static final String HABS_FIJO = "Habilidades_Fijas";
 
-    //HERENCIA
-    public static final String RAZA_TABLE_NOM = "Herencia_TABLA";
-    public static final String DOTES_RAZA = "Dotes_Herencia";
-    public static final String RASGOS_RAZA = "Rasgos_Herencia";
+    //Ascendencia
+    public static final String ASCENDENCIA_TABLE_NOM = "Ascendencia_TABLA";
+    public static final String DOTES_ASCENDENCIA = "Dotes_Ascendencia";
+    public static final String RASGOS_ASCENDENCIA = "Rasgos_Ascendencia";
     public static final String VELOCIDAD_NOM = "Velocidad";
-    public static final String ESTADISTICAS_RAZA = "Estadisticas_Herencia";
+    public static final String ESTADISTICAS_ASCENDENCIA = "Estadisticas_Ascendencia";
     public static final String TAMANO_NOM = "Tamaño";
     public static final String VIDA_NOM = "Puntos_de_Golpe";  
 
@@ -152,8 +152,8 @@ public final class Constants {
     public static final String REQUISITOS_NOM = "Requisito";
     public static final String REQUISITOS_OPCIONES = "Requisitos_Opcion";
     public static final String REQUISITO_DOTE = "Dote_Requerida";
-    public static final String REQUISITO_RAZA = "Raza_Requerida";
-    public static final String SUBRAZA_REQUISITO = "Requisito_Subraza";
+    public static final String REQUISITO_ASCENDENCIA = "Ascendencia_Requerida";
+    public static final String HERENCIA_REQUISITO = "Requisito_Herencia";
     public static final String REQUISITO_STAT = "Requisito_Estadisticas";
     public static final String REQUISITO_EQUIPO = "Requisito_Equipo";
     public static final String REQUISITO_HABILIDAD = "Requisito_Habilidad";
@@ -162,18 +162,18 @@ public final class Constants {
     public static final String ESTADISTICAS_LIBRE = "Estadisticas_elegidas";
     public static final String HABILIDADES_LIBRE = "Habilidades_elegidas";
     
-    //RAZA Y SUBRAZA
-    public static final String RAZA_SUBRAZA = "SubRazas_Raza";
-    public static final String RAZA_NOM = "Nombre_Raza";
-    public static final String SUBRAZA_TABLE_NOM = "Subraza";
-    public static final String SUBRAZA_NOM = "Nombre_Subraza";
-    public static final String SUBRAZA_DESCRIPCION = "Descripción_Subraza";
-    public static final String SUBRAZA_NO_PERTENECE = "La subraza no pertenece a este herencia.";
+    //ASCENDENCIA Y HERENCIA
+    public static final String ASCENDENCIA_HERENCIA = "Herencia_Ancestria";
+    public static final String ASCENDENCIA_NOM = "Nombre_Ascendencia";
+    public static final String HERENCIA_TABLE_NOM = "Herencia";
+    public static final String HERENCIA_NOM = "Nombre_Herencia";
+    public static final String HERENCIA_DESCRIPCION = "Descripción_Herencia";
+    public static final String HERENCIA_NO_PERTENECE = "La Herencia no pertenece a este Ascendencia.";
 
     //ERRORES DE BUSQUEDA
     public static final String EQUIPO_NO_ENCONTRADO = "El Equipo no Existe.";
-    public static final String RAZA_NO_ENCONTRADA = "La Herencia no Existe.";
-    public static final String SUBRAZA_NO_ENCONTRADA = "La Subraza no Existe.";
+    public static final String ASCENDENCIA_NO_ENCONTRADA = "La Ascendencia no Existe.";
+    public static final String HERENCIA_NO_ENCONTRADA = "La Herencia no Existe.";
     public static final String BAGAJE_NO_ENCONTRADO = "El Bagaje no existe.";
     public static final String CLASE_NO_ENCONTRADA = "La Clase no existe.";
     public static final String DOTE_NO_ENCONTRADA = "La Dote no existe.";
@@ -185,7 +185,7 @@ public final class Constants {
     //CANTIDADES
     public static final String CANTIDAD_COMPETENCIAS = "Cantidad_Competencias";
     public static final String CANTIDAD_ESTADISTICAS = "Cantidad_Estadisticas";
-    public static final String CANTIDAD_DOTES_RAZA = "Cantidad_Dote_Raza";
+    public static final String CANTIDAD_DOTES_ASCENDENCIA = "Cantidad_Dote_Ascendencia";
     public static final String CANTIDAD_DOTES_GENERAL = "Cantidad_Dote_General";
     public static final String CANTIDAD_DOTES_HABILIDAD = "Cantidad_Dote_Habilidad";
     public static final String CANTIDAD_DOTES_CLASE = "Cantidad_Dote_Clase";

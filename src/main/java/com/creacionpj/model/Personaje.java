@@ -27,11 +27,11 @@ public class Personaje {
     @JoinColumn(name=Constants.EQUIPO_ID))
     private List<Equipo> equip;
     @ManyToOne
-    @JoinColumn(name=Constants.RAZA_FK)
-    private Raza raza;
+    @JoinColumn(name=Constants.ASCENDENCIA_FK)
+    private Ascendencia ascendencia;
     @ManyToOne
-    @JoinColumn(name=Constants.SUBRAZA_FK)
-    private SubRaza subraza;
+    @JoinColumn(name=Constants.HERENCIA_FK)
+    private Herencia herencia;
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn(name=Constants.LIBRE_FK)
     private Libre libre;
@@ -51,15 +51,15 @@ public class Personaje {
     
     
     public Personaje(){}
-    public Personaje(String nom, Clase cl, Bagaje ba, List<Equipo> eq, Raza ra, SubRaza subra, Libre lib, Habilidad hab,
+    public Personaje(String nom, Clase cl, Bagaje ba, List<Equipo> eq, Ascendencia ra, Herencia subra, Libre lib, Habilidad hab,
         Estadistica stats, CompetenciaCombate comp, List<HuecoDote> dotes){
         setLvl(1);
         setNombre(nom);
         setClase(cl);
         setBaga(ba);
         setEquip(eq);
-        setRaza(ra);
-        setSubraza(subra);
+        setAscendencia(ra);
+        setHerencia(subra);
         setLibre(lib);
         setHab(hab);
         setStats(stats);
@@ -102,11 +102,11 @@ public class Personaje {
     public Estadistica getStats() {
         return stats;
     }
-    public void setSubraza(SubRaza subraza) {
-        this.subraza = subraza;
+    public void setHerencia(Herencia herencia) {
+        this.herencia = herencia;
     }
-    public SubRaza getSubraza() {
-        return subraza;
+    public Herencia getHerencia() {
+        return herencia;
     }
     public void setBaga(Bagaje baga) {
         this.baga = baga;
@@ -138,11 +138,11 @@ public class Personaje {
     public String getNombre() {
         return nombre;
     }
-    public void setRaza(Raza raza) {
-        this.raza = raza;
+    public void setAscendencia(Ascendencia ascendencia) {
+        this.ascendencia = ascendencia;
     }
-    public Raza getRaza() {
-        return raza;
+    public Ascendencia getAscendencia() {
+        return ascendencia;
     }   
     public void setVida(int vida) {
         this.vida = vida;

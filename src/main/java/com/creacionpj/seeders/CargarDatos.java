@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class CargarDatos implements CommandLineRunner {
     private final ClaseSeeder cs;
-    private final RazaSeeder rs;
-    private final SubRazaSeeder srs;
+    private final AscendenciaSeeder rs;
+    private final HerenciaSeeder srs;
     private final DoteSeeder ds;
     private final EquipoSeeder es;
     private final HechizoSeeder hs;
@@ -15,7 +15,7 @@ public class CargarDatos implements CommandLineRunner {
     private final BagajeSeeder bs;
     private final SubidaNivelSeeder sns;
 
-    public CargarDatos(BagajeSeeder bs, ClaseSeeder cs,EquipoSeeder es, RazaSeeder rs, SubRazaSeeder srs, DoteSeeder ds, 
+    public CargarDatos(BagajeSeeder bs, ClaseSeeder cs,EquipoSeeder es, AscendenciaSeeder rs, HerenciaSeeder srs, DoteSeeder ds, 
         HechizoSeeder hs, RasgoSeeder ras, SubidaNivelSeeder sns){
         this.bs=bs;
         this.cs=cs;
@@ -33,8 +33,8 @@ public class CargarDatos implements CommandLineRunner {
         ras.cargaInicialRasgo();
         ds.cargaInicialDote();
         bs.cargaInicialBagaje();
-        rs.cargaInicialRaza();
-        srs.cargaInicialSubRaza();
+        rs.cargaInicialAscendencia();
+        srs.cargaInicialHerencia();
         cs.cargaInicialClase();
         es.cargaInicialEquipo();
         hs.cargaInicialHechizo();

@@ -27,7 +27,7 @@ public class SubidaNivel {
     private int cantidadDotesH;
     @Column(name=Constants.CANTIDAD_DOTES_GENERAL)
     private int cantidadDotesG;
-    @Column(name=Constants.CANTIDAD_DOTES_RAZA)
+    @Column(name=Constants.CANTIDAD_DOTES_ASCENDENCIA)
     private int cantidadDotesR;
     @Column(name=Constants.CANTIDAD_ESTADISTICAS)
     private int cantidadStats;

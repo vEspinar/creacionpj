@@ -9,6 +9,7 @@ import com.creacionpj.model.TipoEstadistica;
 import com.creacionpj.model.TipoHabilidad;
 import com.creacionpj.repositories.BagajeRepository;
 import com.creacionpj.repositories.DoteRepository;
+import com.creacionpj.utils.ConstantsDotes;
 
 @Component 
 public class BagajeSeeder {
@@ -34,10 +35,10 @@ public class BagajeSeeder {
     }
     public void cargaInicialBagaje(){
             Bagaje guardia = crearBagaje("Guardia"," ", TipoEstadistica.FUERZA, TipoEstadistica.CARISMA, TipoHabilidad.ATLETISMO,
-        TipoHabilidad.SABER, List.of(dr.findByNombreIgnoreCase("Intimidación Rápida")));
+        TipoHabilidad.SABER, List.of(dr.findByNombreIgnoreCase(ConstantsDotes.INTIMIDACION_RAPIDA_NOM)));
 
     Bagaje abogado = crearBagaje("Abogado", "Instruido en asuntos legales", TipoEstadistica.INTELIGENCIA, TipoEstadistica.CARISMA, 
-        TipoHabilidad.DIPLOMACIA, TipoHabilidad.SABER, List.of(dr.findByNombreIgnoreCase("Impresión de Grupo")));
+        TipoHabilidad.DIPLOMACIA, TipoHabilidad.SABER, List.of(dr.findByNombreIgnoreCase(ConstantsDotes.IMPRESION_GRUPO_NOM)));
     cargarBagaje(guardia);
     cargarBagaje(abogado);
     }

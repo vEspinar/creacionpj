@@ -88,8 +88,8 @@ public class DoteService {
             return pj.getLvl() >= r.getValor();
         case CLASE:
             return pj.getClase().getClase().equals(r.getClase());
-        case RAZA:
-            return pj.getRaza().getRaza().equals(r.getRaza());
+        case ASCENDENCIA:
+            return pj.getAscendencia().getAscendencia().equals(r.getAscendencia());
         case HABILIDAD:
             return getHabilidadValor(pj, r.getHab()) >= r.getValor();
         case STAT:

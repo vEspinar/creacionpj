@@ -1,5 +1,5 @@
 package com.creacionpj.model;
 
-public enum TipoRaza {
+public enum TipoAscendencia {
     ELFO, ENANO, GNOMO, GOBLIN, HUMANO, MEDIANO
 }

@@ -277,7 +277,7 @@
     },
     {
         "Nombre": "Elfo",
-        "Descripción": "Relativo a la Herencia Elfo. Son gente misteriosa con una rica tradición mágica y académica que suelen tener visión en la penumbra. Una habilidad con este rasgo puede ser usada o seleccionada solo por elfos. Un arma con este rasgo es creada y usada por elfos."
+        "Descripción": "Relativo a la Ascendencia Elfo. Son gente misteriosa con una rica tradición mágica y académica que suelen tener visión en la penumbra. Una habilidad con este rasgo puede ser usada o seleccionada solo por elfos. Un arma con este rasgo es creada y usada por elfos."
     },
     {
         "Nombre": "Elixir",
@@ -293,7 +293,7 @@
     },
     {
         "Nombre": "Enano",
-        "Descripción": "Una criatura con este rasgo es un miembro de la herencia Enano. Los enanos son gente menuda que suelen vivir bajo tierra y tener visión en la oscuridad. Una habilidad con este rasco solo puede ser usada y seleccionada por enanos. Un objeto con este rasgo es creado y usado por enanos."
+        "Descripción": "Una criatura con este rasgo es un miembro de la Ascendencia Enano. Los enanos son gente menuda que suelen vivir bajo tierra y tener visión en la oscuridad. Una habilidad con este rasco solo puede ser usada y seleccionada por enanos. Un objeto con este rasgo es creado y usado por enanos."
     },
     {
         "Nombre": "Encantamiento",
@@ -393,7 +393,7 @@
     },
     {
         "Nombre": "General",
-        "Descripción": "Un tipo de dote que cualquier personaje puede seleccionar independientemente de su raza o clase, mientras cumpla los requisitos. Puedes seleccionar una dote con este rasgo cuando tu clase de otorgue una dote General."
+        "Descripción": "Un tipo de dote que cualquier personaje puede seleccionar independientemente de su ascendencia o clase, mientras cumpla los requisitos. Puedes seleccionar una dote con este rasgo cuando tu clase de otorgue una dote General."
     },
     {
         "Nombre": "Gigante",
@@ -401,7 +401,7 @@
     },
     {
         "Nombre": "Gnomo",
-        "Descripción": "Una criatura con este rasgo pertenece a la herencia Gnomo. Son gente pequeña con habilidades mágicas que buscan nuevas experiencias y suelen tener visión en la penumbra. Una habilidad con este rasgo sólo puede seleccionarse por gnomos. Un arma con este rasgo es creada y usada por gnomos."
+        "Descripción": "Una criatura con este rasgo pertenece a la Ascendencia Gnomo. Son gente pequeña con habilidades mágicas que buscan nuevas experiencias y suelen tener visión en la penumbra. Una habilidad con este rasgo sólo puede seleccionarse por gnomos. Un arma con este rasgo es creada y usada por gnomos."
     },
     {
         "Nombre": "Goblin",
@@ -425,7 +425,7 @@
     },
     {
         "Nombre": "Humano",
-        "Descripción": "Una criatura con este rasgo es miembro de la herencia Humano. Son gente muy diversa conocidos por su capacidad de adaptación. Una habilidad con este rasgo solo puede ser seleccionada o usada por humanos."
+        "Descripción": "Una criatura con este rasgo es miembro de la Ascendencia Humano. Son gente muy diversa conocidos por su capacidad de adaptación. Una habilidad con este rasgo solo puede ser seleccionada o usada por humanos."
     },
     {
         "Nombre": "Humanoide",
@@ -517,7 +517,7 @@
     },
     {
         "Nombre": "Mediano",
-        "Descripción": "Relativo a la Herencia Mediano."
+        "Descripción": "Relativo a la Ascendencia Mediano."
     },
     {
         "Nombre": "Mental",
@@ -581,7 +581,7 @@
     },
     {
         "Nombre": "Orco",
-        "Descripción": "Relativo a la herencia Orco. Gente de piel verde que suele tener visión en la oscuridad. Una habilidad con este rasgo solo puede usarse o seleccionarse por orcos. Un objeto con este rasgo se ha creado y es usado por orcos."
+        "Descripción": "Relativo a la Ascendencia Orco. Gente de piel verde que suele tener visión en la oscuridad. Una habilidad con este rasgo solo puede usarse o seleccionarse por orcos. Un objeto con este rasgo se ha creado y es usado por orcos."
     },
     {
         "Nombre": "Oscuridad",
@@ -681,11 +681,11 @@
     },
     {
         "Nombre": "Semielfo",
-        "Descripción": "Relativo a la herencia mixta SemiElfo."
+        "Descripción": "Relativo a la Ascendencia mixta SemiElfo."
     },
     {
         "Nombre": "Semiorco",
-        "Descripción": "Relativo a la herencia mixta SemiOrco."
+        "Descripción": "Relativo a la Ascendencia mixta SemiOrco."
     },
     {
         "Nombre": "Sin armas",

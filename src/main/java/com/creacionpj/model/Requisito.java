@@ -18,8 +18,8 @@ public class Requisito {
     @Column(name=Constants.REQUISITO_CLASE)
     private TipoClase clase;
     @Enumerated(EnumType.STRING)
-    @Column(name=Constants.REQUISITO_RAZA)
-    private TipoRaza raza;
+    @Column(name=Constants.REQUISITO_ASCENDENCIA)
+    private TipoAscendencia ascendencia;
     @ManyToOne
     @JoinColumn(name=Constants.REQUISITO_DOTE)
     private Dote dote;
@@ -42,9 +42,9 @@ public class Requisito {
         setClase(clase);
         setRequisito(TipoRequisito.CLASE);
     }
-    public Requisito(TipoRaza raza){
-        setRaza(raza);
-        setRequisito(TipoRequisito.RAZA);
+    public Requisito(TipoAscendencia ascendencia){
+        setAscendencia(ascendencia);
+        setRequisito(TipoRequisito.ASCENDENCIA);
     }
     public Requisito(Dote dote){
         setDote(dote);
@@ -113,10 +113,10 @@ public class Requisito {
     public TipoEstadistica getStat() {
         return stat;
     }
-    public void setRaza(TipoRaza raza) {
-        this.raza = raza;
+    public void setAscendencia(TipoAscendencia ascendencia) {
+        this.ascendencia = ascendencia;
     }
-    public TipoRaza getRaza() {
-        return raza;
+    public TipoAscendencia getAscendencia() {
+        return ascendencia;
     }
 }

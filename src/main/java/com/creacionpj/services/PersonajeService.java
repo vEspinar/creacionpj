@@ -12,8 +12,8 @@ import com.creacionpj.model.*;
 import com.creacionpj.repositories.BagajeRepository;
 import com.creacionpj.repositories.ClaseRepository;
 import com.creacionpj.repositories.PersonajeRepository;
-import com.creacionpj.repositories.RazaRepository;
-import com.creacionpj.repositories.SubRazaRepository;
+import com.creacionpj.repositories.AscendenciaRepository;
+import com.creacionpj.repositories.HerenciaRepository;
 import com.creacionpj.repositories.SubidaNivelRepository;
 import com.creacionpj.utils.Constants;
 
@@ -24,11 +24,11 @@ public class PersonajeService {
     private final PersonajeRepository pr;
     private final SubidaNivelRepository snr;
     private final ClaseRepository cr;
-    private final RazaRepository rr;
-    private final SubRazaRepository srr;
+    private final AscendenciaRepository rr;
+    private final HerenciaRepository srr;
     private final BagajeRepository br;
     public PersonajeService(PersonajeRepository pr, SubidaNivelRepository snr, ClaseRepository cr, 
-        RazaRepository rr, SubRazaRepository srr, BagajeRepository br){
+        AscendenciaRepository rr, HerenciaRepository srr, BagajeRepository br){
         this.pr=pr;
         this.snr=snr;
         this.cr=cr;
@@ -61,13 +61,13 @@ public class PersonajeService {
     public PersonajeDTO crearPersonaje(Long cl, Long ba, Long ra, Long sra){
         Clase clase = cr.findById(cl).orElseThrow(() -> new ResourceNotFoundException(Constants.CLASE_NO_ENCONTRADA));
         Bagaje bagaje = br.findById(ba).orElseThrow(() -> new ResourceNotFoundException(Constants.BAGAJE_NO_ENCONTRADO));
-        Raza raza = rr.findById(ra).orElseThrow(() -> new ResourceNotFoundException(Constants.RAZA_NO_ENCONTRADA));
-        SubRaza subraza = srr.findById(sra).orElseThrow(() -> new ResourceNotFoundException(Constants.SUBRAZA_NO_ENCONTRADA));
+        Ascendencia ascendencia = rr.findById(ra).orElseThrow(() -> new ResourceNotFoundException(Constants.ASCENDENCIA_NO_ENCONTRADA));
+        Herencia herencia = srr.findById(sra).orElseThrow(() -> new ResourceNotFoundException(Constants.HERENCIA_NO_ENCONTRADA));
         Libre libre = new Libre(new ArrayList<>(), new ArrayList<>());
-        return PersonajeDTO.from(crearPersonaje(clase, bagaje, raza, subraza, null, libre, 1));
+        return PersonajeDTO.from(crearPersonaje(clase, bagaje, ascendencia, herencia, null, libre, 1));
     }
 
-    //Añadir una List de Estadisticas a Libre en función de las opciones que de la clase, raza y bagaje.
+    //Añadir una List de Estadisticas a Libre en función de las opciones que de la clase, ascendencia y bagaje.
     public void estadisticasClase(Clase cl, Libre lb){
         if(cl==null||lb==null){throw new BadRequestException(Constants.ENTRADA_VACIA);}
         if(cl.getOpcionesEstadisticas().size()==1){
@@ -80,7 +80,7 @@ public class PersonajeService {
         }
     }
 
-    public void estadisticasRaza(Raza rz, Libre lb){
+    public void estadisticasAscendencia(Ascendencia rz, Libre lb){
         if(rz==null||lb==null){throw new BadRequestException(Constants.ENTRADA_VACIA);}
         if(rz.getStatsLibres()>0){
             lb.setTotalOpcionesStats(lb.getTotalOpcionesStats()+rz.getStatsLibres());
@@ -109,7 +109,7 @@ public class PersonajeService {
     }
 
     //Calculo de estadisticas en funcion de las listas en libre.
-    public Estadistica calcularEstadisticas(Raza rz, Libre lb){
+    public Estadistica calcularEstadisticas(Ascendencia rz, Libre lb){
         if(rz==null||lb==null){throw new BadRequestException(Constants.ENTRADA_VACIA);}
         Estadistica stats= new Estadistica(10, 10, 10, 10, 10, 10);
         List<SubidaEstadistica> subidas = new ArrayList<>();
@@ -239,17 +239,17 @@ public class PersonajeService {
 
     private int modificador(int puntuacion){return Math.floorDiv(puntuacion-10,2);}
     
-    //Creación de personaje. Requiere clase, bagaje, Herencia, subraza y equipo.
+    //Creación de personaje. Requiere clase, bagaje, ascendencia, herencia y equipo.
     @Transactional
-    public Personaje crearPersonaje(Clase cla, Bagaje bag, Raza ra, SubRaza sra, List<Equipo> equ, Libre lib, int lvl){
+    public Personaje crearPersonaje(Clase cla, Bagaje bag, Ascendencia ra, Herencia sra, List<Equipo> equ, Libre lib, int lvl){
         if(lvl<=0){lvl=1;}
         if(lib==null){lib=new Libre();}
         if(equ==null){equ=new ArrayList<Equipo>();}
         if(cla==null||bag==null||ra==null||sra==null||sra.getReq()==null){throw new BadRequestException(Constants.ENTRADA_VACIA);}
-        if(sra.getReq().getRaza()!=ra.getRaza()){throw new BadRequestException(Constants.SUBRAZA_NO_PERTENECE);}
+        if(sra.getReq().getAscendencia()!=ra.getAscendencia()){throw new BadRequestException(Constants.HERENCIA_NO_PERTENECE);}
         String nom = "";
         estadisticasClase(cla, lib);
-        estadisticasRaza(ra, lib);
+        estadisticasAscendencia(ra, lib);
         estadisticasBagaje(bag, lib);
         Habilidad hab = calcularHabilidades(cla, bag, null, lib, lvl);
         Estadistica stats = calcularEstadisticas(ra, lib);
@@ -290,7 +290,7 @@ public class PersonajeService {
         }
         if(subida.getCantidadDotesR()>0){
             for(int i=0; i<subida.getCantidadDotesR(); i++){
-                huecosd.add(new HuecoDote(pj, pj.getLvl(),TipoDote.RAZA));
+                huecosd.add(new HuecoDote(pj, pj.getLvl(),TipoDote.ASCENDENCIA));
             }
         }
         if(subida.getSubidasComp()!=null){

@@ -1,5 +1,5 @@
 package com.creacionpj.model;
 
 public enum TipoDote {
-    CLASE, RAZA, HABILIDAD, GENERAL
+    CLASE, ASCENDENCIA, HABILIDAD, GENERAL
 }

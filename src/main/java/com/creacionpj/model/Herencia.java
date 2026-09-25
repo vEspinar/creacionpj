@@ -4,22 +4,22 @@ import jakarta.persistence.*;
 import com.creacionpj.utils.*;
 
 @Entity
-@Table(name=Constants.SUBRAZA_TABLE_NOM)
-public class SubRaza {
+@Table(name=Constants.HERENCIA_TABLE_NOM)
+public class Herencia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Enumerated (EnumType.STRING)
-    @Column(name=Constants.SUBRAZA_NOM)
-    private TipoSubraza nombre;
-    @Column(name=Constants.SUBRAZA_DESCRIPCION, columnDefinition = "TEXT")
+    @Column(name=Constants.HERENCIA_NOM)
+    private TipoHerencia nombre;
+    @Column(name=Constants.HERENCIA_DESCRIPCION, columnDefinition = "TEXT")
     private String desc;
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name=Constants.SUBRAZA_REQUISITO)
+    @JoinColumn(name=Constants.HERENCIA_REQUISITO)
     private Requisito req;
 
-    public SubRaza(){}
-    public SubRaza(TipoSubraza nombre, String desc, Requisito req){
+    public Herencia(){}
+    public Herencia(TipoHerencia nombre, String desc, Requisito req){
         setNombre(nombre);
         setDesc(desc);
         setReq(req);
@@ -37,10 +37,10 @@ public class SubRaza {
     public String getDesc() {
         return desc;
     }
-    public void setNombre(TipoSubraza nombre) {
+    public void setNombre(TipoHerencia nombre) {
         this.nombre = nombre;
     }
-    public TipoSubraza getNombre() {
+    public TipoHerencia getNombre() {
         return nombre;
     }
     public void setReq(Requisito req) {
