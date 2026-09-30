@@ -48,25 +48,25 @@ API Runs at `http://localhost:8080`. To create a Character as an example (Check 
 ```bash
 curl -X POST "http://localhost:8080/api/personajes?claseId=1&ascendenciaId=1&bagajeId=1&herenciaId=1"
 ```
-**Commands**
-# Level up
+**Commands**<br>
+Level up
 ```bash
 curl -X PUT "http://localhost:8080/api/personajes/1/subir-nivel"
 ```
-# Level down 
+Level down 
 ```bash
 curl -X PUT "http://localhost:8080/api/personajes/1/bajar-nivel"
 ```
-# Check open options
+Check open options
 ```bash
 curl "http://localhost:8080/api/personajes/1/opciones"
 ```
-# Choose stats / habilities
+Choose stats / habilities
 ```bash
 curl -X POST "http://localhost:8080/api/personajes/1/estadisticas" -H "Content-Type: application/json" -d '{"stats":["SABIDURIA"]}'
 curl -X POST "http://localhost:8080/api/personajes/1/habilidades" -H "Content-Type: application/json" -d '{"hab":["ACROBACIAS"]}'
 ```
-# Assign feat
+Assign feat
 ```bash
 curl -X POST "http://localhost:8080/api/personajes/1/dotes?huecoId=1&doteId=1"
 ```
@@ -157,25 +157,25 @@ La API queda en `http://localhost:8080`. Ejemplo para crear un personaje (consul
 ```bash
 curl -X POST "http://localhost:8080/api/personajes?claseId=1&ascendenciaId=1&bagajeId=1&herenciaId=1"
 ```
-**Comandos**
-# Subir de nivel
+**Comandos**<br>
+Subir de nivel
 ```bash
 curl -X PUT "http://localhost:8080/api/personajes/1/subir-nivel"
 ```
-# Bajar de nivel
+Bajar de nivel
 ```bash
 curl -X PUT "http://localhost:8080/api/personajes/1/bajar-nivel"
 ```
-# Ver opciones libres pendientes
+Ver opciones libres pendientes
 ```bash
 curl "http://localhost:8080/api/personajes/1/opciones"
 ```
-# Elegir estadísticas / habilidades libres
+Elegir estadísticas / habilidades libres
 ```bash
 curl -X POST "http://localhost:8080/api/personajes/1/estadisticas" -H "Content-Type: application/json" -d '{"stats":["SABIDURIA"]}'
 curl -X POST "http://localhost:8080/api/personajes/1/habilidades" -H "Content-Type: application/json" -d '{"hab":["ACROBACIAS"]}'
 ```
-# Asignar una dote a un hueco libre
+Asignar una dote a un hueco libre
 ```bash
 curl -X POST "http://localhost:8080/api/personajes/1/dotes?huecoId=1&doteId=1"
 ```
