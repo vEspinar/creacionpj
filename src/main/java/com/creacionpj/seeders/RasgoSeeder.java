@@ -3,6 +3,8 @@ package com.creacionpj.seeders;
 import java.io.InputStream;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 import com.creacionpj.model.Rasgo;
@@ -12,6 +14,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Component 
 public class RasgoSeeder {
+    private static final Logger log = LoggerFactory.getLogger(RasgoSeeder.class);
     private final RasgoRepository rr;
     private final ObjectMapper om = new ObjectMapper();
     
@@ -41,10 +44,9 @@ public class RasgoSeeder {
             for(Rasgo r : totalRasgos){
                 cargarRasgo(r);
             }
-            System.out.println("Cargado correctamente");
+            log.info("Cargado correctamente");
         }catch(Exception e){
-            System.err.println("Error al cargar el Json: " +e.getMessage());
-            e.printStackTrace();
+            log.error("Error al cargar el Json: " +e);
         }
     }
 }

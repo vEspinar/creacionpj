@@ -1,9 +1,7 @@
 package com.creacionpj.model;
 
 import jakarta.persistence.*;
-
 import java.util.List;
-
 import com.creacionpj.utils.*;
 
 @Entity
@@ -34,6 +32,10 @@ public class Libre {
     private int totalOpcionesHab;
     @Column(name=Constants.TOTAL_ESTADISTICAS)
     private int totalOpcionesStats;
+    @OneToMany (mappedBy = "libre", orphanRemoval = true, cascade = CascadeType.ALL)
+    private List<EleccionStats> eleccionStats;
+    @OneToMany (mappedBy = "libre", orphanRemoval = true, cascade = CascadeType.ALL)
+    private List<EleccionHabs> eleccionHabs;
 
     public Libre(){}
     public Libre(List<SubidaEstadistica> s, List<SubidaHabilidad> h){
@@ -88,5 +90,17 @@ public class Libre {
     }
     public List<TipoHabilidad> getOpcionesHabs() {
         return opcionesHabs;
+    }
+    public void setEleccionHabs(List<EleccionHabs> eleccionHabs) {
+        this.eleccionHabs = eleccionHabs;
+    }
+    public void setEleccionStats(List<EleccionStats> eleccionStats) {
+        this.eleccionStats = eleccionStats;
+    }
+    public List<EleccionHabs> getEleccionHabs() {
+        return eleccionHabs;
+    }
+    public List<EleccionStats> getEleccionStats() {
+        return eleccionStats;
     }
 }

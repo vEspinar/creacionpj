@@ -2,6 +2,9 @@ package com.creacionpj.seeders.progresionClases;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import com.creacionpj.model.Clase;
 import com.creacionpj.model.Modificador;
@@ -16,6 +19,8 @@ import com.creacionpj.utils.Constants;
 
 @Component 
 public class GuerreroSeeder implements ProgresionClasesSeeder{
+     private static final Logger log = LoggerFactory.getLogger(GuerreroSeeder.class);
+  
     private final SubidaNivelRepository snr;
     private final ClaseRepository cr;
     public GuerreroSeeder(SubidaNivelRepository snr, ClaseRepository cr){
@@ -32,11 +37,11 @@ public class GuerreroSeeder implements ProgresionClasesSeeder{
     public void cargarSubidaNivel(){
         Clase cl = cr.findByClase(TipoClase.GUERRERO);
         if(cl==null){
-            System.out.println(Constants.CLASE_NO_ENCONTRADA); 
+            log.warn(Constants.CLASE_NO_ENCONTRADA); 
             return;
         }
         if(snr.existsByClase(cl)){
-            System.out.println(Constants.SUBIDA_NIVEL_YA_EXISTE);
+            log.error(Constants.SUBIDA_NIVEL_YA_EXISTE);
             return;
         }
         
@@ -49,7 +54,7 @@ public class GuerreroSeeder implements ProgresionClasesSeeder{
 
         SubidaNivel sn3= new SubidaNivel(3,cl);
         sn3.setCantidadDotesG(1);
-        sn3.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.VOLUNTAD),2)));
+        sn3.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.VOLUNTAD),1)));
         subidas.add(sn3);
 
         SubidaNivel sn4= new SubidaNivel(4,cl);
@@ -60,7 +65,7 @@ public class GuerreroSeeder implements ProgresionClasesSeeder{
         SubidaNivel sn5= new SubidaNivel(5,cl);
         sn5.setCantidadDotesR(1);
         sn5.setCantidadDotesG(1);
-        sn5.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.ARMASSIMPLES, TipoCompetenciaCombate.SINARMAS),2)));
+        sn5.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.ARMASSIMPLES, TipoCompetenciaCombate.SINARMAS),1)));
         sn5.setCantidadComp(1); //SUBIDA A EXPERTO EN 1 TIPO DE ARMA
         sn5.setCantidadStats(4);
         subidas.add(sn5);
@@ -73,7 +78,7 @@ public class GuerreroSeeder implements ProgresionClasesSeeder{
         SubidaNivel sn7= new SubidaNivel(7,cl);
         sn7.setOtros(List.of("+2 de daño con armas en las que eres experto. +3 en maestro. +4 en legendario.","+2 a la iniciativa por circunstancia."));
         sn7.setCantidadDotesG(1);
-        sn7.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.PERCEPCION),3)));
+        sn7.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.PERCEPCION),1)));
         sn7.setMods(List.of(new Modificador(TipoModificador.CIRCUNSTANCIA, "Iniciativa", +2)));
         subidas.add(sn7);
 
@@ -87,7 +92,7 @@ public class GuerreroSeeder implements ProgresionClasesSeeder{
         sn9.setCantidadDotesG(1);
         sn9.setOtros(List.of("Dote de Clase que puedes cambiar en los preparativos diarios. Ademas Si consigues éxito en una tirada de Salvación de Fortaleza, en su lugar obtienes un Éxito Crítico."));
         sn9.setCantidadDotesC(1);
-        sn9.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.FORTALEZA),3)));
+        sn9.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.FORTALEZA),1)));
         subidas.add(sn9);
         
         SubidaNivel sn10= new SubidaNivel(10,cl);
@@ -98,7 +103,7 @@ public class GuerreroSeeder implements ProgresionClasesSeeder{
 
         SubidaNivel sn11= new SubidaNivel(11,cl);
         sn11.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.ARMADURALIGERA, TipoCompetenciaCombate.ARMADURAPESADA,TipoCompetenciaCombate.ARMADURAMEDIA,
-            TipoCompetenciaCombate.SINARMADURA, TipoCompetenciaCombate.CLASE),2)));
+            TipoCompetenciaCombate.SINARMADURA, TipoCompetenciaCombate.CLASE),1)));
         sn11.setOtros(List.of("Obtienes los efectos de especialización de Armadura Media y Pesada."));
         sn11.setCantidadDotesG(1);
         subidas.add(sn11);
@@ -109,9 +114,9 @@ public class GuerreroSeeder implements ProgresionClasesSeeder{
         subidas.add(sn12);
 
         SubidaNivel sn13= new SubidaNivel(13,cl);
-        sn13.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.ARMASAVANZADAS),2), 
+        sn13.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.ARMASAVANZADAS),1), 
             new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.ARMASSIMPLES, TipoCompetenciaCombate.SINARMAS,
-                TipoCompetenciaCombate.ARMASMARCIALES),3)));
+                TipoCompetenciaCombate.ARMASMARCIALES),1)));
         sn13.setCantidadComp(1); //SUBIDA A LEGENDARIO EN 1 TIPO DE ARMA
         sn13.setCantidadDotesR(1);
         sn13.setCantidadDotesG(1);
@@ -124,7 +129,7 @@ public class GuerreroSeeder implements ProgresionClasesSeeder{
         
         SubidaNivel sn15= new SubidaNivel(15,cl);
         sn15.setOtros(List.of("+4 al daño con armas. +6 si maestro, +8 si legendario. Además, Si consigues éxito en una tirada de Salvación de Reflejos, en su lugar obtienes un Éxito Crítico. Tambien obtienes una segunda dote que puedes preparar durante tus preparativos diarios."));
-        sn15.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.REFLEJOS), 3)));
+        sn15.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.REFLEJOS), 1)));
         sn15.setCantidadDotesG(1);
         sn15.setCantidadStats(4);
         sn15.setCantidadDotesC(1);
@@ -137,7 +142,7 @@ public class GuerreroSeeder implements ProgresionClasesSeeder{
 
         SubidaNivel sn17= new SubidaNivel(17,cl);
         sn17.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.ARMADURALIGERA,TipoCompetenciaCombate.ARMADURAMEDIA,
-            TipoCompetenciaCombate.ARMADURAPESADA, TipoCompetenciaCombate.SINARMADURA),3)));
+            TipoCompetenciaCombate.ARMADURAPESADA, TipoCompetenciaCombate.SINARMADURA),1)));
         sn17.setCantidadDotesR(1);
         sn17.setCantidadDotesG(1);
         subidas.add(sn17);
@@ -149,9 +154,9 @@ public class GuerreroSeeder implements ProgresionClasesSeeder{
 
         SubidaNivel sn19= new SubidaNivel(19,cl);
         sn19.setSubidasComp(List.of(new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.ARMASAVANZADAS, 
-                TipoCompetenciaCombate.CLASE),3), 
+                TipoCompetenciaCombate.CLASE),1), 
             new SubidaCompetenciaCombate(List.of(TipoCompetenciaCombate.ARMASSIMPLES,TipoCompetenciaCombate.ARMASMARCIALES,
-                TipoCompetenciaCombate.SINARMAS),4)));
+                TipoCompetenciaCombate.SINARMAS),1)));
         sn19.setCantidadDotesG(1);
         subidas.add(sn19);
 

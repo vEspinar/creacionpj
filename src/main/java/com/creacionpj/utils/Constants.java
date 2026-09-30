@@ -260,4 +260,19 @@ public final class Constants {
     public static final String ID_FUERA_RANGO = "El id indicado está fuera de rango";
     public static final String EQUIPO_GRUPO = "Grupo_Equipo";
     public static final String EQUIPO_CATEGORIA = "Categoria_Equipo";
+    public static final String NIVEL_MAXIMO_ALCANZADO = "No se puede subir el personaje por encima del nivel 20.";
+    public static final String ESTADISTICAS_NO_PERMITIDAS = "No es permite seleccionar alguna de estas estadísticas.";
+    public static final String ESTADISTICAS_EXCESIVAS = "Se han seleccionado Estadísticas de más.";
+    public static final String ESTADISTICAS_REPETIDAS = "Estadísticas duplicadas.";
+    public static final String HABILIDADES_REPETIDAS = "Habilidades duplicadas.";
+    public static final String HABILIDADES_NO_PERMITIDAS = "No se permite seleccionar alguna de estas habilidades.";
+    public static final String HABILIDADES_EXCESIVAS = "Se han seleccionado Habilidades de más.";
+    public static final String ELECCION_ESTADISTICAS = "Elección_Estadisticas";
+    public static final String ELECCION_HABILIDADES = "Elección_Habilidades";
+    public static final String NIVEL_MINIMO_ALCANZADO = "El personaje se encuentra a nivel mínimo.";
+    public static final String PJ_FK = "Personaje_FK";
+    public static final String HUECO_DOTE_EN_USO = "El hueco ya tiene una dote.";
+    public static final String HUECO_NO_ENCONTRADO = "Hueco no encontrado.";
+    public static final String DOTE_REQUISITO_NO_CUMPLIDO = "La dote no cumple con los requisitos.";
+    public static final String DOTE_TIPO_INCORRECTO = "Esta dote no es del tipo adecuado.";
 }

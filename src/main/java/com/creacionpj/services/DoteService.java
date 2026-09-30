@@ -95,10 +95,11 @@ public class DoteService {
         case STAT:
             return getStatValor(pj, r.getStat()) >= r.getValor();
         case DOTE_PREVIA:
+            if(r.getDote()==null||r.getDote().getId()==null){return false;}
             List<HuecoDote> dot= pj.getHuecosDotes();
             if(dot==null){ return false;}
             for(HuecoDote hd:dot){
-                if(hd.getDote()!= null && hd.getDote().equals(r.getDote())){
+                if(hd.getDote()!= null && hd.getDote().getId().equals(r.getDote().getId())){
                     return true;
                 }
             }

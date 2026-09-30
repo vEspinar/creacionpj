@@ -54,8 +54,10 @@ public class CompetenciaCombate {
     @RangoCompetencia
     private int percepcionComp;
     @Column(name=Constants.CLASE_COMP)
+    @RangoCompetencia 
     private int claseComp;
     @Column(name=Constants.CONJURO_COMP)
+    @RangoCompetencia 
     private int conjuroComp;
 
 //Constructor vacio y lleno

@@ -36,7 +36,7 @@ public class HechizoSeeder {
     }
 
     public void cargaInicialHechizo(){
-        Hechizo bolaDeFuego = crearHechizo(3, "Bola de Fuego", "Una rugiente explosión de fuego aparece en un lugar designado por ti, inflingiendo 6d6 daño por fuego.",
+        Hechizo bolaDeFuego = crearHechizo(3, "Bola de Fuego", "Una rugiente explosión de fuego aparece en un lugar designado por ti, infligiendo 6d6 daño por fuego.",
             "6d6", "+1", "+2d6", List.of(rs.getRasgo("Evocación")), List.of(TipoTradicion.ARCANA, TipoTradicion.PRIMIGENIA),
             List.of(TipoAccion.DOS_ACCIONES), TipoCompetenciaCombate.REFLEJOS, "500p", "20p explosion", "area", null, null);
         cargarHechizo(bolaDeFuego);
